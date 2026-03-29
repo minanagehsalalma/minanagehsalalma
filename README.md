@@ -1,8 +1,9 @@
+
+
+<h1 align="center">Mina Nageh Salama</h1>
 <p align="center">
   <img src="./assets/profile-banner.svg" alt="Mina Nageh Salama profile banner" />
 </p>
-
-<h1 align="center">Mina Nageh Salama</h1>
 <p align="center">
   Security researcher and junior security engineer focused on web vulnerability research,
   browser-side investigations, malware analysis, and practical automation.
