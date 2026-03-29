@@ -31,7 +31,8 @@
   <text x="96" y="184" fill="#63748C" font-family="Consolas, 'Courier New', monospace" font-size="12">ID</text>
   <text x="96" y="220" fill="#F8FAFC" font-family="Consolas, 'Courier New', monospace" font-size="36" font-weight="700">MNS</text>
   <text x="236" y="146" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600">Mina Nageh Salama</text>
-  <text x="236" y="198" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800">Security Researcher</text>
+  <!-- Reduced font size from 52 to 42 to prevent overlapping the right boxes -->
+  <text x="236" y="194" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="800">Security Researcher</text>
   <text x="236" y="232" fill="#9DB0C8" font-family="Consolas, 'Courier New', monospace" font-size="16">web vulns / browser-side investigations</text>
   <text x="236" y="255" fill="#9DB0C8" font-family="Consolas, 'Courier New', monospace" font-size="16">routers / firmware / malware analysis</text>
   <text x="236" y="286" fill="#5EEAD4" font-family="Consolas, 'Courier New', monospace" font-size="15">synack research / disclosure / tooling</text>
