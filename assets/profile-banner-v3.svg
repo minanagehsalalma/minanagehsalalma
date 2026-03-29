@@ -36,11 +36,11 @@
   <text x="226" y="194" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="50" font-weight="800">Security Researcher</text>
   <text x="226" y="226" fill="#9DB0C8" font-family="Consolas, 'Courier New', monospace" font-size="16">web vulns / browser-side investigations</text>
   <text x="226" y="248" fill="#9DB0C8" font-family="Consolas, 'Courier New', monospace" font-size="16">routers / firmware / malware analysis</text>
-  <text x="226" y="274" fill="#5EEAD4" font-family="Consolas, 'Courier New', monospace" font-size="15">synack research / coordinated disclosure / practical tooling</text>
+  <text x="226" y="274" fill="#5EEAD4" font-family="Consolas, 'Courier New', monospace" font-size="15">synack research / disclosure / tooling</text>
 
-  <rect x="72" y="286" width="730" height="18" rx="9" fill="#081221" stroke="#1E314D"/>
-  <text x="92" y="299" fill="#6E819A" font-family="Consolas, 'Courier New', monospace" font-size="10">FOCUS</text>
-  <text x="142" y="299" fill="#E5EEF9" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600">credential exposure analysis, auth bypass validation, browser tooling, evidence-first reporting</text>
+  <rect x="72" y="280" width="610" height="24" rx="12" fill="#081221" stroke="#1E314D"/>
+  <text x="92" y="295" fill="#6E819A" font-family="Consolas, 'Courier New', monospace" font-size="10">FOCUS</text>
+  <text x="144" y="295" fill="#E5EEF9" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600">credential exposure analysis / auth bypass validation / browser tooling</text>
 
   <rect x="860" y="112" width="268" height="62" rx="14" fill="#0A1628" stroke="#233650"/>
   <text x="882" y="136" fill="#6C819C" font-family="Consolas, 'Courier New', monospace" font-size="12">CURRENT SIGNAL</text>
