@@ -73,6 +73,10 @@ function pluralize(count, singular, plural) {
 }
 
 function buildCveRecordLine(cves) {
+  const assignedWithReferences = cves.assigned.filter((item) => item.reference_url).length;
+  if (cves.assigned.length > 0 && assignedWithReferences === cves.assigned.length) {
+    return "<p><strong>Status note:</strong> The assigned CVE IDs now have public reference URLs and will move into the public CVE section once broader publication catches up.</p>";
+  }
   if (cves.assigned.length > 0) {
     return "<p><strong>Status note:</strong> The assigned CVE IDs are tracked here and will move into the public CVE section once public reference URLs are available.</p>";
   }
@@ -105,7 +109,8 @@ function buildCveSection(cves) {
 
     for (const item of cves.assigned) {
       const suffix = sharedNote || !item.status_note ? "" : ` (${item.status_note})`;
-      parts.push(`- \`${item.id}\`: ${item.summary}${suffix}`);
+      const lead = item.reference_url ? `[\`${item.id}\`](${item.reference_url})` : `\`${item.id}\``;
+      parts.push(`- ${lead}: ${item.summary}${suffix}`);
     }
   }
 

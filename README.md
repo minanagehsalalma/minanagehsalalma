@@ -63,7 +63,7 @@
   </a>
 </p>
 
-<p><strong>Status note:</strong> The assigned CVE IDs are tracked here and will move into the public CVE section once public reference URLs are available.</p>
+<p><strong>Status note:</strong> The assigned CVE IDs now have public reference URLs and will move into the public CVE section once broader publication catches up.</p>
 <!--SIGNAL_END-->
 
 ## What I Work On
@@ -84,11 +84,11 @@
 
 ### Assigned CVE IDs
 
-_Assigned by MITRE in March 2026. Public reference URL pending._
+_Assigned by MITRE in March 2026. Public reference gist is available._
 
-- `CVE-2026-34472`: ZXHN H188A V6.0 unauthenticated credential disclosure via the web wizard, leading to admin, WLAN, and PPPoE credential exposure and auth bypass
-- `CVE-2026-34473`: ZXHN H-series multiple models unauthenticated denial of service via oversized `application/x-www-form-urlencoded` POST bodies against the management interface
-- `CVE-2026-34474`: ZXHN H298A and H108N sensitive data exposure through the web interface, leading to admin and WLAN credential disclosure
+- [`CVE-2026-34472`](https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9): ZXHN H188A V6.0 unauthenticated credential disclosure via the web wizard, leading to admin, WLAN, and PPPoE credential exposure and auth bypass
+- [`CVE-2026-34473`](https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9): ZXHN H-series multiple models unauthenticated denial of service via oversized `application/x-www-form-urlencoded` POST bodies against the management interface
+- [`CVE-2026-34474`](https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9): ZXHN H298A and H108N sensitive data exposure through the web interface, leading to admin and WLAN credential disclosure
 <!--CVE_SECTION_END-->
 
 ### Other Findings And Analyses
@@ -108,6 +108,15 @@ _Assigned by MITRE in March 2026. Public reference URL pending._
 | [BookMarkletsWiki](https://github.com/minanagehsalalma/BookMarkletsWiki) | Practical browser tooling collected into one place. |
 | [Ubicast-Video-Downloader](https://github.com/minanagehsalalma/Ubicast-Video-Downloader) | Small targeted JavaScript tooling with a clear one-click use case. |
 | [WIFI-Location-Locator-GUI](https://github.com/minanagehsalalma/WIFI-Location-Locator-GUI) | Public Wi-Fi utility work that aligns with the network side of the profile. |
+
+## Selected Gists
+
+| Gist | Why it matters |
+| --- | --- |
+| [ZTE ZXHN router vulnerabilities](https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9) | Public reference write-up for the assigned 2026 ZTE/ZXHN CVE IDs. |
+| [Export Chrome extensions inventory](https://gist.github.com/minanagehsalalma/351e506118b26ccc886292ab22ab63cf) | Practical PowerShell inventory/export tooling for browser-extension analysis and auditing. |
+| [Milanote Board to Markdown](https://gist.github.com/minanagehsalalma/63e956ab9f402261bd618375b27f5899) | Useful browser automation work that turns visual boards into markdown output. |
+| [Reddit post exporter](https://gist.github.com/minanagehsalalma/9bd62eda8a59d09653c3b767e4e3cee3) | Tampermonkey-based structured export tooling with a clear LLM/data-prep use case. |
 
 ## Experience And Education
 
