@@ -1,42 +1,46 @@
 <svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Mina Nageh Salama profile banner</title>
-  <desc id="desc">Dark security-themed banner with profile focus areas.</desc>
+  <desc id="desc">Custom profile banner highlighting security research, CVE work, and practical tooling.</desc>
   <defs>
-    <linearGradient id="bg" x1="80" y1="40" x2="1120" y2="280" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0B1220"/>
+    <linearGradient id="bg" x1="40" y1="24" x2="1160" y2="296" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1120"/>
       <stop offset="1" stop-color="#111827"/>
     </linearGradient>
-    <linearGradient id="line" x1="84" y1="0" x2="1116" y2="0" gradientUnits="userSpaceOnUse">
+    <linearGradient id="accent" x1="84" y1="0" x2="1116" y2="0" gradientUnits="userSpaceOnUse">
       <stop stop-color="#22C55E"/>
       <stop offset="0.5" stop-color="#38BDF8"/>
       <stop offset="1" stop-color="#F59E0B"/>
     </linearGradient>
+    <pattern id="grid" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" stroke="#1E293B" stroke-width="1"/>
+    </pattern>
   </defs>
-  <rect x="16" y="16" width="1168" height="288" rx="24" fill="url(#bg)"/>
-  <rect x="16.5" y="16.5" width="1167" height="287" rx="23.5" stroke="#1F2937"/>
-  <path d="M84 76H1116" stroke="url(#line)" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="98" cy="76" r="8" fill="#22C55E"/>
-  <circle cx="112" cy="76" r="8" fill="#38BDF8"/>
-  <circle cx="126" cy="76" r="8" fill="#F59E0B"/>
-  <text x="84" y="132" fill="#F9FAFB" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">
-    Web Security Researcher
-  </text>
-  <text x="84" y="174" fill="#9CA3AF" font-family="Consolas, 'Courier New', monospace" font-size="22">
-    CVE author • red team research • browser and router investigations
-  </text>
-  <text x="84" y="222" fill="#D1D5DB" font-family="Segoe UI, Arial, sans-serif" font-size="22">
-    Python, JavaScript, Burp Suite, Wireshark, reproducible reporting
-  </text>
-  <rect x="806" y="108" width="290" height="40" rx="10" fill="#111827" stroke="#23314D"/>
-  <text x="828" y="134" fill="#38BDF8" font-family="Consolas, 'Courier New', monospace" font-size="18">
-    synack / bug bounty / cves
-  </text>
-  <rect x="806" y="160" width="290" height="40" rx="10" fill="#111827" stroke="#23314D"/>
-  <text x="828" y="186" fill="#22C55E" font-family="Consolas, 'Courier New', monospace" font-size="18">
-    web vulns / malware / browser
-  </text>
-  <rect x="806" y="212" width="290" height="40" rx="10" fill="#111827" stroke="#23314D"/>
-  <text x="828" y="238" fill="#F59E0B" font-family="Consolas, 'Courier New', monospace" font-size="18">
-    wifi / routers / tooling
-  </text>
+
+  <rect x="16" y="16" width="1168" height="288" rx="26" fill="url(#bg)"/>
+  <rect x="16.5" y="16.5" width="1167" height="287" rx="25.5" stroke="#1F2937"/>
+  <rect x="16" y="16" width="1168" height="288" rx="26" fill="url(#grid)" opacity="0.22"/>
+
+  <path d="M84 74H1116" stroke="url(#accent)" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="100" cy="74" r="10" fill="#22C55E"/>
+  <circle cx="118" cy="74" r="10" fill="#38BDF8"/>
+  <circle cx="136" cy="74" r="10" fill="#F59E0B"/>
+
+  <rect x="84" y="108" width="96" height="96" rx="20" fill="#0F172A" stroke="#23314D"/>
+  <text x="132" y="170" text-anchor="middle" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="700">MN</text>
+
+  <text x="208" y="134" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="600">Mina Nageh Salama</text>
+  <text x="208" y="182" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">Security Researcher</text>
+  <text x="208" y="220" fill="#94A3B8" font-family="Consolas, 'Courier New', monospace" font-size="18">Synack red team research - CVE work - coordinated disclosure</text>
+
+  <rect x="84" y="238" width="328" height="48" rx="16" fill="#0F172A" stroke="#23314D"/>
+  <text x="108" y="257" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">CURRENT FOCUS</text>
+  <text x="108" y="276" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600">Web vulns and browser-side work</text>
+
+  <rect x="436" y="238" width="328" height="48" rx="16" fill="#0F172A" stroke="#23314D"/>
+  <text x="460" y="257" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">RESEARCH THREADS</text>
+  <text x="460" y="276" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600">Routers, Wi-Fi, firmware, and malware</text>
+
+  <rect x="788" y="238" width="328" height="48" rx="16" fill="#0F172A" stroke="#23314D"/>
+  <text x="812" y="257" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">WORK STYLE</text>
+  <text x="812" y="276" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600">Evidence-first reporting and useful tooling</text>
 </svg>

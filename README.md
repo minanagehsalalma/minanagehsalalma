@@ -12,9 +12,14 @@
   <a href="https://github.com/minanagehsalalma?tab=followers">
     <img src="https://img.shields.io/github/followers/minanagehsalalma?style=for-the-badge&label=Followers" alt="GitHub followers" />
   </a>
+  <!--METRICS_BADGES_START-->
+  <a href="https://github.com/minanagehsalalma?tab=repositories">
+    <img src="https://img.shields.io/badge/Public%20Repos-26-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Public repositories" />
+  </a>
   <a href="https://github.com/minanagehsalalma?tab=repositories">
     <img src="https://img.shields.io/badge/Public%20Stars-86-111111?style=for-the-badge&logo=github&logoColor=white" alt="Public stars" />
   </a>
+  <!--METRICS_BADGES_END-->
   <a href="https://www.linkedin.com/in/minanagehzekry/">
     <img src="https://img.shields.io/badge/LinkedIn-minanagehzekry-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
@@ -23,7 +28,10 @@
   </a>
 </p>
 
+<!--SIGNAL_START-->
 ## Signal
+
+_Metrics refresh automatically via GitHub Actions._
 
 | Metric | Value |
 | --- | --- |
@@ -32,8 +40,9 @@
 | Public repositories | 26 |
 | Public stars across repos | 86 |
 | Followers | 63 |
-| Published CVEs | 2 |
+| CVE record history | 2 public CVEs and 3 assigned 2026 CVE IDs pending public references |
 | Current study | MSc at University of Tuscia (UNITUS), Italy |
+<!--SIGNAL_END-->
 
 ## What I Work On
 
@@ -45,12 +54,22 @@
 
 ## Selected Security Work
 
-- `CVE-2021-35036`: Zyxel super-admin password leak affecting multiple router models
-- `CVE-2021-21735`: ZTE H168N authentication bypass
+### Public CVEs
+
+- [`CVE-2021-35036`](https://nvd.nist.gov/vuln/detail/CVE-2021-35036): Zyxel super-admin password leak affecting multiple router models
+- [`CVE-2021-21735`](https://nvd.nist.gov/vuln/detail/CVE-2021-21735): ZTE H168N authentication bypass
 - Account takeover on OLX Middle East via password-reset logic abuse
 - Race condition in Medium's voting flow that enabled count manipulation
 - `ShotBird` analysis in March 2026: ownership-transfer to browser-based C2 chain, credential and form-data capture, and follow-on Windows credential targeting
 - Hack The Box work focused on systematic enumeration, common web vulnerabilities, and Linux privilege escalation
+
+### Assigned 2026 CVE IDs
+
+_Assigned by MITRE in March 2026. Public reference URLs are still being prepared._
+
+- `CVE-2026-34472`: ZXHN H188A V6.0 unauthenticated credential disclosure via the web wizard, leading to admin, WLAN, and PPPoE credential exposure and auth bypass
+- `CVE-2026-34473`: ZXHN H-series multiple models unauthenticated denial of service via oversized `application/x-www-form-urlencoded` POST bodies against the management interface
+- `CVE-2026-34474`: ZXHN H298A and H108N sensitive data exposure through the web interface, leading to admin and WLAN credential disclosure
 
 ## Selected Public Projects
 
