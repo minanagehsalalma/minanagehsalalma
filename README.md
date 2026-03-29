@@ -1,16 +1,15 @@
-
-
 <h1 align="center">Mina Nageh Salama</h1>
-<p align="center">
+
 <p align="center">
   <img src="https://img.shields.io/badge/Burp%20Suite-7D2AE8?style=for-the-badge&logo=burpsuite&logoColor=white" alt="Burp Suite" />
   <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
   <img src="https://img.shields.io/badge/Firmware%20Research-374151?style=for-the-badge&logo=linux&logoColor=white" alt="Firmware research" />
-  <img src="https://img.shields.io/badge/Hack%20The%20Box-9FEF00?style=for-the-badge" alt="Hack The Box" />
-</p>
-  <img src="./assets/profile-banner-v4.svg" alt="Mina Nageh Salama profile banner" />
+  <img src="https://img.shields.io/badge/Hack%20The%20Box-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="Hack The Box" />
 </p>
 
+<p align="center">
+  <img src="./assets/profile-banner-v4.svg" alt="Mina Nageh Salama profile banner" />
+</p>
 
 <p align="center">
   Security researcher and engineer focused on web vulnerability research,
