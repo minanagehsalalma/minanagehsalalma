@@ -52,25 +52,12 @@
 </table>
 
 <p>
-  <img src="https://img.shields.io/badge/Public%20Repos-26-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Public repositories" />
-  <img src="https://img.shields.io/badge/Public%20Stars-86-111111?style=for-the-badge&logo=github&logoColor=white" alt="Public stars" />
-  <img src="https://img.shields.io/badge/Followers-63-1D4ED8?style=for-the-badge&logo=github&logoColor=white" alt="Followers" />
-</p>
-
-<p>
   <img src="https://img.shields.io/badge/Public%20CVEs-2-0F766E?style=for-the-badge" alt="Public CVEs" />
   <img src="https://img.shields.io/badge/Assigned%202026%20IDs-3-7C3AED?style=for-the-badge" alt="Assigned 2026 CVE IDs" />
   <img src="https://img.shields.io/badge/Status-Active%20Research-166534?style=for-the-badge" alt="Active research" />
 </p>
 
-<table>
-  <tr>
-    <td width="100%">
-      <strong>CVE record</strong><br/>
-      2 public CVEs and 3 assigned 2026 CVE IDs currently awaiting public reference URLs.
-    </td>
-  </tr>
-</table>
+<p><strong>CVE record:</strong> 2 public CVEs and 3 assigned 2026 CVE IDs currently awaiting public reference URLs.</p>
 <!--SIGNAL_END-->
 
 ## What I Work On
@@ -89,7 +76,7 @@
 - [`CVE-2021-21735`](https://nvd.nist.gov/vuln/detail/CVE-2021-21735): ZTE H168N authentication bypass
 - Account takeover on OLX Middle East via password-reset logic abuse
 - Race condition in Medium's voting flow that enabled count manipulation
-- `ShotBird` analysis in March 2026: ownership-transfer to browser-based C2 chain, credential and form-data capture, and follow-on Windows credential targeting
+- `ShotBird` analysis in March 2026: ownership-transfer to browser-based C2 chain, credential and form-data capture, and follow-on Windows credential targeting. Public write-up pending.
 - Hack The Box work focused on systematic enumeration, common web vulnerabilities, and Linux privilege escalation
 
 ### Assigned 2026 CVE IDs
@@ -121,3 +108,14 @@ _Assigned by MITRE in March 2026. Public reference URLs are still being prepared
 ## Toolbox
 
 [![Skills](https://skillicons.dev/icons?i=py,js,ts,html,git,linux)](https://skillicons.dev)
+
+<p>
+  <img src="https://img.shields.io/badge/Burp%20Suite-7D2AE8?style=flat-square" alt="Burp Suite" />
+  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=flat-square" alt="Wireshark" />
+  <img src="https://img.shields.io/badge/Firmware%20Research-374151?style=flat-square" alt="Firmware research" />
+  <img src="https://img.shields.io/badge/Hack%20The%20Box-9FEF00?style=flat-square" alt="Hack The Box" />
+</p>
+
+## Note
+
+I work across both public and private repositories. Public README card services undercount that activity, so this profile favors verified role, project, and repository signals over flaky contribution widgets.
