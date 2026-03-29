@@ -1,0 +1,52 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Mina Nageh Salama research dossier banner</title>
+  <desc id="desc">A compact security-research banner with clean spacing and advisory styling.</desc>
+  <defs>
+    <linearGradient id="bg" x1="40" y1="20" x2="1160" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="72" y1="0" x2="1128" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22C55E"/>
+      <stop offset="0.58" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <pattern id="grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#12233B" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect x="16" y="16" width="1168" height="288" rx="24" fill="url(#bg)"/>
+  <rect x="16.5" y="16.5" width="1167" height="287" rx="23.5" stroke="#1A2A43"/>
+  <rect x="16" y="16" width="1168" height="288" rx="24" fill="url(#grid)" opacity="0.34"/>
+
+  <path d="M72 74H1128" stroke="url(#edge)" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="92" cy="74" r="8" fill="#22C55E"/>
+  <circle cx="110" cy="74" r="8" fill="#38BDF8"/>
+  <circle cx="128" cy="74" r="8" fill="#F59E0B"/>
+
+  <rect x="72" y="96" width="154" height="30" rx="15" fill="#0A1628" stroke="#22344E"/>
+  <text x="92" y="116" fill="#8FB7FF" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2">RESEARCH DOSSIER</text>
+
+  <rect x="72" y="146" width="126" height="96" rx="16" fill="#091526" stroke="#22344E"/>
+  <text x="96" y="184" fill="#63748C" font-family="Consolas, 'Courier New', monospace" font-size="12">ID</text>
+  <text x="96" y="220" fill="#F8FAFC" font-family="Consolas, 'Courier New', monospace" font-size="36" font-weight="700">MNS</text>
+
+  <text x="236" y="146" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600">Mina Nageh Salama</text>
+  <text x="236" y="198" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800">Security Researcher</text>
+  <text x="236" y="232" fill="#9DB0C8" font-family="Consolas, 'Courier New', monospace" font-size="16">web vulns / browser-side investigations</text>
+  <text x="236" y="255" fill="#9DB0C8" font-family="Consolas, 'Courier New', monospace" font-size="16">routers / firmware / malware analysis</text>
+  <text x="236" y="286" fill="#5EEAD4" font-family="Consolas, 'Courier New', monospace" font-size="15">synack research / disclosure / tooling</text>
+
+  <rect x="874" y="118" width="254" height="56" rx="14" fill="#0A1628" stroke="#233650"/>
+  <text x="896" y="141" fill="#6C819C" font-family="Consolas, 'Courier New', monospace" font-size="12">CURRENT SIGNAL</text>
+  <text x="896" y="161" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Synack Red Team Researcher</text>
+
+  <rect x="874" y="184" width="254" height="56" rx="14" fill="#0A1628" stroke="#233650"/>
+  <text x="896" y="207" fill="#6C819C" font-family="Consolas, 'Courier New', monospace" font-size="12">DISCLOSURE</text>
+  <text x="896" y="227" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">5 CVEs tracked / active flow</text>
+
+  <rect x="874" y="250" width="254" height="38" rx="14" fill="#0A1628" stroke="#233650"/>
+  <text x="896" y="273" fill="#6C819C" font-family="Consolas, 'Courier New', monospace" font-size="12">METHOD</text>
+  <text x="960" y="273" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">reports / tooling</text>
+</svg>
