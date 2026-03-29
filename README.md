@@ -76,7 +76,7 @@
 - [`CVE-2021-21735`](https://nvd.nist.gov/vuln/detail/CVE-2021-21735): ZTE H168N authentication bypass
 - Account takeover on OLX Middle East via password-reset logic abuse
 - Race condition in Medium's voting flow that enabled count manipulation
-- `ShotBird` analysis in March 2026: ownership-transfer to browser-based C2 chain, credential and form-data capture, and follow-on Windows credential targeting. Public write-up pending.
+- [`ShotBird`](https://monxresearch-sec.github.io/shotbird-extension-malware-report/) analysis in March 2026: ownership-transfer to browser-based C2 chain, credential and form-data capture, and follow-on Windows credential targeting.
 - Hack The Box work focused on systematic enumeration, common web vulnerabilities, and Linux privilege escalation
 
 ### Assigned 2026 CVE IDs
@@ -115,7 +115,3 @@ _Assigned by MITRE in March 2026. Public reference URLs are still being prepared
   <img src="https://img.shields.io/badge/Firmware%20Research-374151?style=flat-square" alt="Firmware research" />
   <img src="https://img.shields.io/badge/Hack%20The%20Box-9FEF00?style=flat-square" alt="Hack The Box" />
 </p>
-
-## Note
-
-I work across both public and private repositories. Public README card services undercount that activity, so this profile favors verified role, project, and repository signals over flaky contribution widgets.
