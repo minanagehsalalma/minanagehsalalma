@@ -13,6 +13,15 @@
   </a>
 </p>
 
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=minanagehsalalma&theme=github_dark" alt="GitHub profile summary for Mina Nageh Salama" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=minanagehsalalma&theme=github_dark" alt="Repositories per language for Mina Nageh Salama" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=minanagehsalalma&theme=github_dark" alt="Most commit language for Mina Nageh Salama" />
+</p>
+
 ## Highlights
 
 - 25+ public repositories across Python, JavaScript, TypeScript, and browser tooling
