@@ -19,7 +19,7 @@
   <a href="https://github.com/minanagehsalalma?tab=repositories">
     <img src="https://img.shields.io/badge/Public%20Stars-86-111111?style=for-the-badge&logo=github&logoColor=white" alt="Public stars" />
   </a>
-  <!--METRICS_BADGES_END-->
+<!--METRICS_BADGES_END-->
   <a href="https://www.linkedin.com/in/minanagehzekry/">
     <img src="https://img.shields.io/badge/LinkedIn-minanagehzekry-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
