@@ -121,7 +121,3 @@ _Assigned by MITRE in March 2026. Public reference URLs are still being prepared
 ## Toolbox
 
 [![Skills](https://skillicons.dev/icons?i=py,js,ts,html,git,linux)](https://skillicons.dev)
-
-## Note
-
-I work across both public and private repositories. Public README card services undercount that activity, so this profile favors verified role, project, and repository signals over flaky contribution widgets.
