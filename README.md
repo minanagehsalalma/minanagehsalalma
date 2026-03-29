@@ -29,19 +29,47 @@
 </p>
 
 <!--SIGNAL_START-->
-## Signal
+## Operational Snapshot
 
-_Metrics refresh automatically via GitHub Actions._
+> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-03-29 16:00 UTC
 
-| Metric | Value |
-| --- | --- |
-| Current role | Red Team Researcher at Synack |
-| Independent research | Since December 2020 |
-| Public repositories | 26 |
-| Public stars across repos | 86 |
-| Followers | 63 |
-| CVE record history | 2 public CVEs and 3 assigned 2026 CVE IDs pending public references |
-| Current study | MSc at University of Tuscia (UNITUS), Italy |
+<table>
+  <tr>
+    <td width="33%">
+      <strong>Current role</strong><br/>
+      Red Team Researcher at Synack
+    </td>
+    <td width="33%">
+      <strong>Independent research</strong><br/>
+      Since December 2020
+    </td>
+    <td width="33%">
+      <strong>Current study</strong><br/>
+      MSc at University of Tuscia (UNITUS), Italy
+    </td>
+  </tr>
+</table>
+
+<p>
+  <img src="https://img.shields.io/badge/Public%20Repos-26-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Public repositories" />
+  <img src="https://img.shields.io/badge/Public%20Stars-86-111111?style=for-the-badge&logo=github&logoColor=white" alt="Public stars" />
+  <img src="https://img.shields.io/badge/Followers-63-1D4ED8?style=for-the-badge&logo=github&logoColor=white" alt="Followers" />
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/Public%20CVEs-2-0F766E?style=for-the-badge" alt="Public CVEs" />
+  <img src="https://img.shields.io/badge/Assigned%202026%20IDs-3-7C3AED?style=for-the-badge" alt="Assigned 2026 CVE IDs" />
+  <img src="https://img.shields.io/badge/Status-Active%20Research-166534?style=for-the-badge" alt="Active research" />
+</p>
+
+<table>
+  <tr>
+    <td width="100%">
+      <strong>CVE record</strong><br/>
+      2 public CVEs and 3 assigned 2026 CVE IDs currently awaiting public reference URLs.
+    </td>
+  </tr>
+</table>
 <!--SIGNAL_END-->
 
 ## What I Work On
