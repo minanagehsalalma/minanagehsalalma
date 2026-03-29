@@ -13,10 +13,11 @@
   </a>
 </p>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=minanagehsalalma&show_icons=true&hide_border=true&rank_icon=github&include_all_commits=true" height="165" alt="GitHub stats for Mina Nageh Salama" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=minanagehsalalma&layout=compact&hide_border=true&langs_count=8" height="165" alt="Top languages for Mina Nageh Salama" />
-</p>
+## Highlights
+
+- 25+ public repositories across Python, JavaScript, TypeScript, and browser tooling
+- `Youtube-Downloader-Bookmarklet` is currently the strongest public project on the profile with 49 stars
+- security, router, and Wi-Fi focused utilities are a recurring theme across the account
 
 ## About me
 
