@@ -19,7 +19,7 @@
     },
     {
       "id": "CVE-2026-34473",
-      "summary": "ZXHN H-series multiple models unauthenticated denial of service via oversized application/x-www-form-urlencoded POST bodies against the management interface",
+      "summary": "ZXHN H-series multiple models unauthenticated denial of service via oversized `application/x-www-form-urlencoded` POST bodies against the management interface",
       "status_note": "Assigned by MITRE in March 2026. Public reference URL pending."
     },
     {

@@ -52,12 +52,18 @@
 </table>
 
 <p>
-  <img src="https://img.shields.io/badge/Public%20CVEs-2-0F766E?style=for-the-badge" alt="Public CVEs" />
-  <img src="https://img.shields.io/badge/Assigned%20CVE%20IDs-3-7C3AED?style=for-the-badge" alt="Assigned CVE IDs" />
-  <img src="https://img.shields.io/badge/Status-Active%20Research-166534?style=for-the-badge" alt="Active research" />
+  <a href="#public-cves">
+    <img src="https://img.shields.io/badge/Public%20CVEs-2-0F766E?style=for-the-badge" alt="Public CVEs" />
+  </a>
+  <a href="#assigned-cve-ids">
+    <img src="https://img.shields.io/badge/Assigned%20CVE%20IDs-3-7C3AED?style=for-the-badge" alt="Assigned CVE IDs" />
+  </a>
+  <a href="#selected-security-work">
+    <img src="https://img.shields.io/badge/Status-Active%20Research-166534?style=for-the-badge" alt="Active research" />
+  </a>
 </p>
 
-<p><strong>CVE record:</strong> 2 public CVEs and 3 assigned CVE IDs currently tracked.</p>
+<p><strong>Status note:</strong> The assigned CVE IDs are tracked here and will move into the public CVE section once public reference URLs are available.</p>
 <!--SIGNAL_END-->
 
 ## What I Work On
@@ -81,7 +87,7 @@
 _Assigned by MITRE in March 2026. Public reference URL pending._
 
 - `CVE-2026-34472`: ZXHN H188A V6.0 unauthenticated credential disclosure via the web wizard, leading to admin, WLAN, and PPPoE credential exposure and auth bypass
-- `CVE-2026-34473`: ZXHN H-series multiple models unauthenticated denial of service via oversized application/x-www-form-urlencoded POST bodies against the management interface
+- `CVE-2026-34473`: ZXHN H-series multiple models unauthenticated denial of service via oversized `application/x-www-form-urlencoded` POST bodies against the management interface
 - `CVE-2026-34474`: ZXHN H298A and H108N sensitive data exposure through the web interface, leading to admin and WLAN credential disclosure
 <!--CVE_SECTION_END-->
 
@@ -115,8 +121,8 @@ _Assigned by MITRE in March 2026. Public reference URL pending._
 [![Skills](https://skillicons.dev/icons?i=py,js,ts,html,git,linux)](https://skillicons.dev)
 
 <p>
-  <img src="https://img.shields.io/badge/Burp%20Suite-7D2AE8?style=flat-square" alt="Burp Suite" />
-  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=flat-square" alt="Wireshark" />
-  <img src="https://img.shields.io/badge/Firmware%20Research-374151?style=flat-square" alt="Firmware research" />
-  <img src="https://img.shields.io/badge/Hack%20The%20Box-9FEF00?style=flat-square" alt="Hack The Box" />
+  <img src="https://img.shields.io/badge/Burp%20Suite-7D2AE8?style=for-the-badge" alt="Burp Suite" />
+  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge" alt="Wireshark" />
+  <img src="https://img.shields.io/badge/Firmware%20Research-374151?style=for-the-badge" alt="Firmware research" />
+  <img src="https://img.shields.io/badge/Hack%20The%20Box-9FEF00?style=for-the-badge" alt="Hack The Box" />
 </p>
