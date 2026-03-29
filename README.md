@@ -5,7 +5,7 @@
   <img src="./assets/profile-banner.svg" alt="Mina Nageh Salama profile banner" />
 </p>
 <p align="center">
-  Security researcher and junior security engineer focused on web vulnerability research,
+  Security researcher and engineer focused on web vulnerability research,
   browser-side investigations, malware analysis, and practical automation.
 </p>
 
@@ -32,7 +32,7 @@
 <!--SIGNAL_START-->
 ## Operational Snapshot
 
-> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-03-29 16:19 UTC
+> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-03-29 16:27 UTC
 
 <table>
   <tr>
@@ -63,7 +63,7 @@
   </a>
 </p>
 
-<p><strong>Status note:</strong> The assigned CVE IDs now have public reference URLs and will move into the public CVE section once broader publication catches up.</p>
+<p><strong>Status note:</strong> All assigned 2026 CVE IDs are currently covered in a single public <a href="https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9">reference gist</a> and can move into the public CVE section once broader publication catches up.</p>
 <!--SIGNAL_END-->
 
 ## What I Work On
@@ -86,9 +86,11 @@
 
 _Assigned by MITRE in March 2026. Public reference gist is available._
 
-- [`CVE-2026-34472`](https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9): ZXHN H188A V6.0 unauthenticated credential disclosure via the web wizard, leading to admin, WLAN, and PPPoE credential exposure and auth bypass
-- [`CVE-2026-34473`](https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9): ZXHN H-series multiple models unauthenticated denial of service via oversized `application/x-www-form-urlencoded` POST bodies against the management interface
-- [`CVE-2026-34474`](https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9): ZXHN H298A and H108N sensitive data exposure through the web interface, leading to admin and WLAN credential disclosure
+_All three currently share a single [reference gist](https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9)._
+
+- `CVE-2026-34472`: ZXHN H188A V6.0 unauthenticated credential disclosure via the web wizard, leading to admin, WLAN, and PPPoE credential exposure and auth bypass
+- `CVE-2026-34473`: ZXHN H-series multiple models unauthenticated denial of service via oversized `application/x-www-form-urlencoded` POST bodies against the management interface
+- `CVE-2026-34474`: ZXHN H298A and H108N sensitive data exposure through the web interface, leading to admin and WLAN credential disclosure
 <!--CVE_SECTION_END-->
 
 ### Other Findings And Analyses
@@ -130,8 +132,8 @@ _Assigned by MITRE in March 2026. Public reference gist is available._
 [![Skills](https://skillicons.dev/icons?i=py,js,ts,html,git,linux)](https://skillicons.dev)
 
 <p>
-  <img src="https://img.shields.io/badge/Burp%20Suite-7D2AE8?style=for-the-badge" alt="Burp Suite" />
-  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge" alt="Wireshark" />
-  <img src="https://img.shields.io/badge/Firmware%20Research-374151?style=for-the-badge" alt="Firmware research" />
+  <img src="https://img.shields.io/badge/Burp%20Suite-7D2AE8?style=for-the-badge&logo=burpsuite&logoColor=white" alt="Burp Suite" />
+  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
+  <img src="https://img.shields.io/badge/Firmware%20Research-374151?style=for-the-badge&logo=linux&logoColor=white" alt="Firmware research" />
   <img src="https://img.shields.io/badge/Hack%20The%20Box-9FEF00?style=for-the-badge" alt="Hack The Box" />
 </p>

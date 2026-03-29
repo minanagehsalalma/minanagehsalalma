@@ -72,7 +72,24 @@ function pluralize(count, singular, plural) {
   return `${count} ${count === 1 ? singular : plural}`;
 }
 
+function getSharedAssignedReference(cves) {
+  if (cves.assigned.length === 0) {
+    return null;
+  }
+
+  const firstReference = cves.assigned[0]?.reference_url;
+  if (!firstReference) {
+    return null;
+  }
+
+  return cves.assigned.every((item) => item.reference_url === firstReference) ? firstReference : null;
+}
+
 function buildCveRecordLine(cves) {
+  const sharedAssignedReference = getSharedAssignedReference(cves);
+  if (sharedAssignedReference) {
+    return `<p><strong>Status note:</strong> All assigned 2026 CVE IDs are currently covered in a single public <a href="${sharedAssignedReference}">reference gist</a> and can move into the public CVE section once broader publication catches up.</p>`;
+  }
   const assignedWithReferences = cves.assigned.filter((item) => item.reference_url).length;
   if (cves.assigned.length > 0 && assignedWithReferences === cves.assigned.length) {
     return "<p><strong>Status note:</strong> The assigned CVE IDs now have public reference URLs and will move into the public CVE section once broader publication catches up.</p>";
@@ -85,6 +102,7 @@ function buildCveRecordLine(cves) {
 
 function buildCveSection(cves) {
   const parts = [];
+  const sharedAssignedReference = getSharedAssignedReference(cves);
 
   parts.push("### Public CVEs", "");
   if (cves.public.length === 0) {
@@ -107,9 +125,13 @@ function buildCveSection(cves) {
       parts.push(`_${sharedNote}_`, "");
     }
 
+    if (sharedAssignedReference) {
+      parts.push(`_All three currently share a single [reference gist](${sharedAssignedReference})._`, "");
+    }
+
     for (const item of cves.assigned) {
       const suffix = sharedNote || !item.status_note ? "" : ` (${item.status_note})`;
-      const lead = item.reference_url ? `[\`${item.id}\`](${item.reference_url})` : `\`${item.id}\``;
+      const lead = sharedAssignedReference ? `\`${item.id}\`` : (item.reference_url ? `[\`${item.id}\`](${item.reference_url})` : `\`${item.id}\``);
       parts.push(`- ${lead}: ${item.summary}${suffix}`);
     }
   }
