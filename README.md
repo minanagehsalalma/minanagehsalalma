@@ -53,11 +53,11 @@
 
 <p>
   <img src="https://img.shields.io/badge/Public%20CVEs-2-0F766E?style=for-the-badge" alt="Public CVEs" />
-  <img src="https://img.shields.io/badge/Assigned%202026%20IDs-3-7C3AED?style=for-the-badge" alt="Assigned 2026 CVE IDs" />
+  <img src="https://img.shields.io/badge/Assigned%20CVE%20IDs-3-7C3AED?style=for-the-badge" alt="Assigned CVE IDs" />
   <img src="https://img.shields.io/badge/Status-Active%20Research-166534?style=for-the-badge" alt="Active research" />
 </p>
 
-<p><strong>CVE record:</strong> 2 public CVEs and 3 assigned 2026 CVE IDs currently awaiting public reference URLs.</p>
+<p><strong>CVE record:</strong> 2 public CVEs and 3 assigned CVE IDs currently tracked.</p>
 <!--SIGNAL_END-->
 
 ## What I Work On
@@ -70,22 +70,27 @@
 
 ## Selected Security Work
 
+<!--CVE_SECTION_START-->
 ### Public CVEs
 
 - [`CVE-2021-35036`](https://nvd.nist.gov/vuln/detail/CVE-2021-35036): Zyxel super-admin password leak affecting multiple router models
 - [`CVE-2021-21735`](https://nvd.nist.gov/vuln/detail/CVE-2021-21735): ZTE H168N authentication bypass
-- Account takeover on OLX Middle East via password-reset logic abuse
-- Race condition in Medium's voting flow that enabled count manipulation
-- [`ShotBird`](https://monxresearch-sec.github.io/shotbird-extension-malware-report/) analysis in March 2026: ownership-transfer to browser-based C2 chain, credential and form-data capture, and follow-on Windows credential targeting.
-- Hack The Box work focused on systematic enumeration, common web vulnerabilities, and Linux privilege escalation
 
-### Assigned 2026 CVE IDs
+### Assigned CVE IDs
 
-_Assigned by MITRE in March 2026. Public reference URLs are still being prepared._
+_Assigned by MITRE in March 2026. Public reference URL pending._
 
 - `CVE-2026-34472`: ZXHN H188A V6.0 unauthenticated credential disclosure via the web wizard, leading to admin, WLAN, and PPPoE credential exposure and auth bypass
-- `CVE-2026-34473`: ZXHN H-series multiple models unauthenticated denial of service via oversized `application/x-www-form-urlencoded` POST bodies against the management interface
+- `CVE-2026-34473`: ZXHN H-series multiple models unauthenticated denial of service via oversized application/x-www-form-urlencoded POST bodies against the management interface
 - `CVE-2026-34474`: ZXHN H298A and H108N sensitive data exposure through the web interface, leading to admin and WLAN credential disclosure
+<!--CVE_SECTION_END-->
+
+### Other Findings And Analyses
+
+- Account takeover on OLX Middle East via password-reset logic abuse
+- Race condition in Medium's voting flow that enabled count manipulation
+- [`ShotBird`](https://monxresearch-sec.github.io/shotbird-extension-malware-report/) analysis in March 2026: ownership-transfer to browser-based C2 chain, credential and form-data capture, and follow-on Windows credential targeting
+- Hack The Box work focused on systematic enumeration, common web vulnerabilities, and Linux privilege escalation
 
 ## Selected Public Projects
 

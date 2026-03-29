@@ -24,7 +24,7 @@ jobs:
       - name: Refresh README metrics
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: minanagehsalalma
+          GITHUB_PROFILE_USERNAME: minanagehsalalma
         run: node scripts/update-readme.js
 
       - name: Commit changes

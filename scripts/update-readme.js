@@ -1,14 +1,17 @@
 const fs = require("fs");
 const path = require("path");
 
-const username = process.env.USERNAME || "minanagehsalalma";
+const username = process.env.GITHUB_PROFILE_USERNAME || "minanagehsalalma";
 const repoRoot = process.cwd();
 const readmePath = path.join(repoRoot, "README.md");
+const cvesPath = path.join(repoRoot, "data", "cves.json");
 
 const signalStart = "<!--SIGNAL_START-->";
 const signalEnd = "<!--SIGNAL_END-->";
 const badgesStart = "<!--METRICS_BADGES_START-->";
 const badgesEnd = "<!--METRICS_BADGES_END-->";
+const cveStart = "<!--CVE_SECTION_START-->";
+const cveEnd = "<!--CVE_SECTION_END-->";
 
 async function getJson(url) {
   const headers = {
@@ -56,9 +59,62 @@ function replaceSection(source, startMarker, endMarker, nextContent) {
   return `${before}\n${nextContent}\n${after}`;
 }
 
+function loadCveData() {
+  const raw = fs.readFileSync(cvesPath, "utf8");
+  const parsed = JSON.parse(raw);
+  return {
+    public: Array.isArray(parsed.public) ? parsed.public : [],
+    assigned: Array.isArray(parsed.assigned) ? parsed.assigned : [],
+  };
+}
+
+function pluralize(count, singular, plural) {
+  return `${count} ${count === 1 ? singular : plural}`;
+}
+
+function buildCveRecordLine(cves) {
+  const publicCount = cves.public.length;
+  const assignedCount = cves.assigned.length;
+  return `<p><strong>CVE record:</strong> ${pluralize(publicCount, "public CVE", "public CVEs")} and ${pluralize(assignedCount, "assigned CVE ID", "assigned CVE IDs")} currently tracked.</p>`;
+}
+
+function buildCveSection(cves) {
+  const parts = [];
+
+  parts.push("### Public CVEs", "");
+  if (cves.public.length === 0) {
+    parts.push("- No public CVEs listed yet.");
+  } else {
+    for (const item of cves.public) {
+      parts.push(`- [\`${item.id}\`](${item.reference_url}): ${item.summary}`);
+    }
+  }
+
+  parts.push("", "### Assigned CVE IDs", "");
+  if (cves.assigned.length === 0) {
+    parts.push("- No assigned CVE IDs pending publication.");
+  } else {
+    const sharedNote = cves.assigned.every((item) => item.status_note === cves.assigned[0]?.status_note)
+      ? cves.assigned[0].status_note
+      : null;
+
+    if (sharedNote) {
+      parts.push(`_${sharedNote}_`, "");
+    }
+
+    for (const item of cves.assigned) {
+      const suffix = sharedNote || !item.status_note ? "" : ` (${item.status_note})`;
+      parts.push(`- \`${item.id}\`: ${item.summary}${suffix}`);
+    }
+  }
+
+  return parts.join("\n");
+}
+
 async function main() {
   const profile = await getJson(`https://api.github.com/users/${username}`);
   const repos = await getAllPublicRepos();
+  const cves = loadCveData();
   const totalStars = repos.reduce((sum, repo) => sum + (repo.stargazers_count || 0), 0);
   const now = new Date();
   const refreshedAt = `${now.getUTCFullYear()}-${String(now.getUTCMonth() + 1).padStart(2, "0")}-${String(now.getUTCDate()).padStart(2, "0")} ${String(now.getUTCHours()).padStart(2, "0")}:${String(now.getUTCMinutes()).padStart(2, "0")} UTC`;
@@ -86,12 +142,12 @@ async function main() {
     "</table>",
     "",
     "<p>",
-    '  <img src="https://img.shields.io/badge/Public%20CVEs-2-0F766E?style=for-the-badge" alt="Public CVEs" />',
-    '  <img src="https://img.shields.io/badge/Assigned%202026%20IDs-3-7C3AED?style=for-the-badge" alt="Assigned 2026 CVE IDs" />',
+    `  <img src="https://img.shields.io/badge/Public%20CVEs-${cves.public.length}-0F766E?style=for-the-badge" alt="Public CVEs" />`,
+    `  <img src="https://img.shields.io/badge/Assigned%20CVE%20IDs-${cves.assigned.length}-7C3AED?style=for-the-badge" alt="Assigned CVE IDs" />`,
     '  <img src="https://img.shields.io/badge/Status-Active%20Research-166534?style=for-the-badge" alt="Active research" />',
     "</p>",
     "",
-    "<p><strong>CVE record:</strong> 2 public CVEs and 3 assigned 2026 CVE IDs currently awaiting public reference URLs.</p>",
+    buildCveRecordLine(cves),
   ].join("\n");
 
   const badgesSection = [
@@ -106,6 +162,7 @@ async function main() {
   let readme = fs.readFileSync(readmePath, "utf8");
   readme = replaceSection(readme, signalStart, signalEnd, signalSection);
   readme = replaceSection(readme, badgesStart, badgesEnd, badgesSection);
+  readme = replaceSection(readme, cveStart, cveEnd, buildCveSection(cves));
   fs.writeFileSync(readmePath, readme);
 }
 
