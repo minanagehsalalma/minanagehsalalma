@@ -21,6 +21,12 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Generate contribution art
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_PROFILE_USERNAME: minanagehsalalma
+        run: node scripts/generate-contribs.js
+
       - name: Refresh README metrics
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -31,7 +37,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md
+          git add README.md assets/contribs/contribs-dark.svg assets/contribs/contribs-light.svg
           git diff --cached --quiet && exit 0
           git commit -m "chore: refresh profile metrics"
           git push

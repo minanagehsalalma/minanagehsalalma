@@ -39,7 +39,7 @@
 <!--SIGNAL_START-->
 ## Operational Snapshot
 
-> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-04-26 07:53 UTC
+> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-04-26 15:23 UTC
 
 <table>
   <tr>
@@ -72,6 +72,16 @@
 
 <p><strong>Status note:</strong> All assigned 2026 CVE IDs are currently covered in a single public <a href="https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9">reference gist</a> and can move into the public CVE section once broader publication catches up.</p>
 <!--SIGNAL_END-->
+
+## Contribution Activity
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/contribs/contribs-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/contribs/contribs-light.svg" />
+    <img src="./assets/contribs/contribs-light.svg" alt="Isometric GitHub contribution activity for Mina Nageh Salama" width="100%" />
+  </picture>
+</p>
 
 ## What I Work On
 
