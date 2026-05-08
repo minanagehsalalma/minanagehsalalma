@@ -68,8 +68,24 @@ function loadCveData() {
   };
 }
 
-function pluralize(count, singular, plural) {
-  return `${count} ${count === 1 ? singular : plural}`;
+function getVendorMeta(vendor) {
+  const normalized = String(vendor || "").trim().toLowerCase();
+  if (normalized === "zyxel") {
+    return { label: "Zyxel", color: "0F766E" };
+  }
+  if (normalized === "zte") {
+    return { label: "ZTE", color: "15803D" };
+  }
+  return null;
+}
+
+function buildVendorBadge(vendor) {
+  const meta = getVendorMeta(vendor);
+  if (!meta) {
+    return "";
+  }
+  const label = encodeURIComponent(meta.label);
+  return `<img src="https://img.shields.io/badge/${label}-${meta.color}?style=flat-square" alt="${meta.label}" /> `;
 }
 
 function getSharedAssignedReference(cves) {
@@ -109,7 +125,7 @@ function buildCveSection(cves) {
     parts.push("- No public CVEs listed yet.");
   } else {
     for (const item of cves.public) {
-      parts.push(`- [\`${item.id}\`](${item.reference_url}): ${item.summary}`);
+      parts.push(`- ${buildVendorBadge(item.vendor)}[\`${item.id}\`](${item.reference_url}): ${item.summary}`);
     }
   }
 
@@ -130,7 +146,7 @@ function buildCveSection(cves) {
     for (const item of cves.assigned) {
       const suffix = sharedNote || !item.status_note ? "" : ` (${item.status_note})`;
       const lead = sharedAssignedReference ? `\`${item.id}\`` : (item.reference_url ? `[\`${item.id}\`](${item.reference_url})` : `\`${item.id}\``);
-      parts.push(`- ${lead}: ${item.summary}${suffix}`);
+      parts.push(`- ${buildVendorBadge(item.vendor)}${lead}: ${item.summary}${suffix}`);
     }
   }
 
