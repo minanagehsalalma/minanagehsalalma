@@ -87,8 +87,11 @@ function getTypeMeta(type) {
   if (normalized === "auth bypass") {
     return { label: "Auth Bypass", color: "F97316" };
   }
-  if (normalized === "dos") {
-    return { label: "DoS", color: "DC2626" };
+  if (normalized === "denial of service" || normalized === "dos") {
+    return { label: "Denial of Service", color: "DC2626" };
+  }
+  if (normalized === "cleartext storage") {
+    return { label: "Cleartext Storage", color: "7C3AED" };
   }
   return null;
 }
@@ -150,9 +153,8 @@ function buildCveBlock(item, lead, suffix = "") {
 
   return [
     "<p>",
-    `  <strong>${lead}</strong>${product}<br/>`,
-    `  ${impact}${suffix}<br/>`,
-    `  ${badgeLine}`,
+    `  ${badgeLine}<strong>${lead}</strong>${product}<br/>`,
+    `  ${impact}${suffix}`,
     "</p>",
   ].join("\n");
 }
