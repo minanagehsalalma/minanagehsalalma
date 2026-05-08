@@ -39,7 +39,7 @@
 <!--SIGNAL_START-->
 ## Operational Snapshot
 
-> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-05-08 20:03 UTC
+> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-05-08 20:06 UTC
 
 <table>
   <tr>
@@ -109,9 +109,9 @@
   Web wizard credential disclosure exposing admin, WLAN, and PPPoE secrets.
 </p>
 <p>
-  <img src="https://img.shields.io/badge/Zyxel-0F766E?style=flat-square" alt="Zyxel" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/31%20models-1F2937?style=flat-square" alt="31 models" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Cleartext%20Storage-7C3AED?style=flat-square" alt="Cleartext Storage" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
+  <img src="https://img.shields.io/badge/Zyxel-0F766E?style=flat-square" alt="Zyxel" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/31%20models-1F2937?style=flat-square" alt="31 models" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Super-Admin%20Password%20Leak-BE123C?style=flat-square" alt="Super-Admin Password Leak" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
   <strong><a href="https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-cleartext-storage-of-information-vulnerability"><code>CVE-2021-35036</code></a></strong> — Zyxel CPE / ONT / LTE-5G router fleet<br/>
-  Cleartext storage vulnerability across Zyxel's advisory-listed router fleet, exposing login-privilege and TR-069 configuration data after authenticated access.
+  Super-admin password leak exposing high-privilege router credentials through Zyxel's login-privilege configuration path.
 </p>
 <p>
   <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/1%20model-1F2937?style=flat-square" alt="1 model" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Auth%20Bypass-F97316?style=flat-square" alt="Auth Bypass" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>

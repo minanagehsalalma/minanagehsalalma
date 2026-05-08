@@ -93,6 +93,9 @@ function getTypeMeta(type) {
   if (normalized === "cleartext storage") {
     return { label: "Cleartext Storage", color: "7C3AED" };
   }
+  if (normalized === "super-admin password leak") {
+    return { label: "Super-Admin Password Leak", color: "BE123C" };
+  }
   return null;
 }
 

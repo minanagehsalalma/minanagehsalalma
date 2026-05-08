@@ -37,9 +37,9 @@
       "id": "CVE-2021-35036",
       "vendor": "Zyxel",
       "product": "Zyxel CPE / ONT / LTE-5G router fleet",
-      "impact": "Cleartext storage vulnerability across Zyxel's advisory-listed router fleet, exposing login-privilege and TR-069 configuration data after authenticated access.",
+      "impact": "Super-admin password leak exposing high-privilege router credentials through Zyxel's login-privilege configuration path.",
       "scope_badge": "31 models",
-      "type_badge": "Cleartext Storage",
+      "type_badge": "Super-Admin Password Leak",
       "status_badge": "Public",
       "reference_url": "https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-cleartext-storage-of-information-vulnerability",
       "sort_order": 4
