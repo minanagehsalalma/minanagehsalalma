@@ -49,6 +49,7 @@
       "vendor": "ZTE",
       "product": "ZTE H168N",
       "impact": "Authentication bypass exposing full router admin access.",
+      "scope_badge": "2 firmware builds",
       "type_badge": "Auth Bypass",
       "status_badge": "Public",
       "reference_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-21735",

@@ -96,7 +96,7 @@ function getTypeMeta(type) {
 function getStatusMeta(status) {
   const normalized = String(status || "").trim().toLowerCase();
   if (normalized === "public") {
-    return { label: "Public", color: "166534" };
+    return { label: "status", message: "Public", color: "2ea043", alt: "Public" };
   }
   return null;
 }
@@ -106,7 +106,9 @@ function buildBadge(meta) {
     return "";
   }
   const label = encodeURIComponent(meta.label);
-  return `<img src="https://img.shields.io/badge/${label}-${meta.color}?style=flat-square" alt="${meta.label}" height="20" align="absmiddle" />&nbsp;`;
+  const message = meta.message ? `-${encodeURIComponent(meta.message)}` : "";
+  const alt = meta.alt || meta.label;
+  return `<img src="https://img.shields.io/badge/${label}${message}-${meta.color}?style=flat-square" alt="${alt}" height="20" align="absmiddle" />&nbsp;`;
 }
 
 function buildVendorBadge(vendor) {
