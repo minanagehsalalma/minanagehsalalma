@@ -96,6 +96,14 @@ function buildScopeBadge(scopeBadge) {
   return `<img src="https://img.shields.io/badge/${encodeURIComponent(label)}-1F2937?style=flat-square" alt="${label}" height="20" align="absmiddle" />&nbsp;`;
 }
 
+function buildCveListItem(item, lead, suffix = "") {
+  const badgeLine = `${buildVendorBadge(item.vendor)}${buildScopeBadge(item.scope_badge)}`.trim();
+  return [
+    `<div>&nbsp;&nbsp;&nbsp;&nbsp;${badgeLine}</div>`,
+    `<div>&bull;&nbsp;${lead}: ${item.summary}${suffix}</div>`,
+  ].join("\n");
+}
+
 function getSharedAssignedReference(cves) {
   if (cves.assigned.length === 0) {
     return null;
@@ -132,11 +140,9 @@ function buildCveSection(cves) {
   if (cves.public.length === 0) {
     parts.push("- No public CVEs listed yet.");
   } else {
-    parts.push("<ul>");
     for (const item of cves.public) {
-      parts.push(`  <li>${buildVendorBadge(item.vendor)}${buildScopeBadge(item.scope_badge)}<a href="${item.reference_url}"><code>${item.id}</code></a>: ${item.summary}</li>`);
+      parts.push(buildCveListItem(item, `<a href="${item.reference_url}"><code>${item.id}</code></a>`));
     }
-    parts.push("</ul>");
   }
 
   if (cves.assigned.length > 0) {
@@ -153,15 +159,13 @@ function buildCveSection(cves) {
       parts.push(`_All three currently share a single [reference gist](${sharedAssignedReference})._`, "");
     }
 
-    parts.push("<ul>");
     for (const item of cves.assigned) {
       const suffix = sharedNote || !item.status_note ? "" : ` (${item.status_note})`;
       const lead = sharedAssignedReference
         ? `<code>${item.id}</code>`
         : (item.reference_url ? `<a href="${item.reference_url}"><code>${item.id}</code></a>` : `<code>${item.id}</code>`);
-      parts.push(`  <li>${buildVendorBadge(item.vendor)}${buildScopeBadge(item.scope_badge)}${lead}: ${item.summary}${suffix}</li>`);
+      parts.push(buildCveListItem(item, lead, suffix));
     }
-    parts.push("</ul>");
   }
 
   return parts.join("\n");
