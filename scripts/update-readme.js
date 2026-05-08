@@ -85,7 +85,15 @@ function buildVendorBadge(vendor) {
     return "";
   }
   const label = encodeURIComponent(meta.label);
-  return `<img src="https://img.shields.io/badge/${label}-${meta.color}?style=flat-square" alt="${meta.label}" /> `;
+  return `<img src="https://img.shields.io/badge/${label}-${meta.color}?style=flat-square" alt="${meta.label}" />&nbsp;`;
+}
+
+function buildScopeBadge(scopeBadge) {
+  const label = String(scopeBadge || "").trim();
+  if (!label) {
+    return "";
+  }
+  return `<img src="https://img.shields.io/badge/${encodeURIComponent(label)}-1F2937?style=flat-square" alt="${label}" />&nbsp;`;
 }
 
 function getSharedAssignedReference(cves) {
@@ -113,7 +121,7 @@ function buildCveRecordLine(cves) {
   if (cves.assigned.length > 0) {
     return "<p><strong>Status note:</strong> The assigned CVE IDs are tracked here and will move into the public CVE section once public reference URLs are available.</p>";
   }
-  return "<p><strong>Status note:</strong> All tracked CVE records listed below currently have public references.</p>";
+  return `<p><strong>Status note:</strong> ${cves.public.length} public CVE records are listed below, each backed by a direct public reference.</p>`;
 }
 
 function buildCveSection(cves) {
@@ -124,9 +132,11 @@ function buildCveSection(cves) {
   if (cves.public.length === 0) {
     parts.push("- No public CVEs listed yet.");
   } else {
+    parts.push("<ul>");
     for (const item of cves.public) {
-      parts.push(`- ${buildVendorBadge(item.vendor)}[\`${item.id}\`](${item.reference_url}): ${item.summary}`);
+      parts.push(`  <li>${buildVendorBadge(item.vendor)}${buildScopeBadge(item.scope_badge)}<a href="${item.reference_url}"><code>${item.id}</code></a>: ${item.summary}</li>`);
     }
+    parts.push("</ul>");
   }
 
   if (cves.assigned.length > 0) {
@@ -143,11 +153,15 @@ function buildCveSection(cves) {
       parts.push(`_All three currently share a single [reference gist](${sharedAssignedReference})._`, "");
     }
 
+    parts.push("<ul>");
     for (const item of cves.assigned) {
       const suffix = sharedNote || !item.status_note ? "" : ` (${item.status_note})`;
-      const lead = sharedAssignedReference ? `\`${item.id}\`` : (item.reference_url ? `[\`${item.id}\`](${item.reference_url})` : `\`${item.id}\``);
-      parts.push(`- ${buildVendorBadge(item.vendor)}${lead}: ${item.summary}${suffix}`);
+      const lead = sharedAssignedReference
+        ? `<code>${item.id}</code>`
+        : (item.reference_url ? `<a href="${item.reference_url}"><code>${item.id}</code></a>` : `<code>${item.id}</code>`);
+      parts.push(`  <li>${buildVendorBadge(item.vendor)}${buildScopeBadge(item.scope_badge)}${lead}: ${item.summary}${suffix}</li>`);
     }
+    parts.push("</ul>");
   }
 
   return parts.join("\n");

@@ -12,8 +12,8 @@
 </p>
 
 <p align="center">
-  Security researcher and engineer focused on web vulnerability research,
-  browser-side investigations, malware analysis, and practical automation.
+  Security researcher and engineer focused on high-signal web vulnerability research,
+  browser-side investigations, malware analysis, and practical automation that holds up under scrutiny.
 </p>
 
 <p align="center">
@@ -39,7 +39,7 @@
 <!--SIGNAL_START-->
 ## Operational Snapshot
 
-> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-05-08 18:59 UTC
+> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-05-08 19:14 UTC
 
 <table>
   <tr>
@@ -67,7 +67,7 @@
   </a>
 </p>
 
-<p><strong>Status note:</strong> All tracked CVE records listed below currently have public references.</p>
+<p><strong>Status note:</strong> 5 public CVE records are listed below, each backed by a direct public reference.</p>
 <!--SIGNAL_END-->
 
 ## Contribution Activity
@@ -83,49 +83,51 @@
 ## What I Work On
 
 - Web vulnerability research with clear reproduction steps, impact framing, and remediation notes
-- Browser-extension analysis, request/response inspection, and exploit-path validation
-- Router, Wi-Fi, and firmware security work
-- Python and JavaScript tooling to speed up testing, validation, and reporting
-- Write-ups and investigations that preserve technical detail without turning into noise
+- Browser-extension and client-side investigations tied to real exploit paths
+- Router, Wi-Fi, and firmware security work with a bias toward findings that survive review
+- Python and JavaScript tooling that compresses testing, validation, and reporting time
+- Write-ups that stay technically dense, readable, and useful to engineers
 
 ## Selected Security Work
 
 <!--CVE_SECTION_START-->
 ### Public CVEs
 
-- <img src="https://img.shields.io/badge/Zyxel-0F766E?style=flat-square" alt="Zyxel" /> [`CVE-2021-35036`](https://nvd.nist.gov/vuln/detail/CVE-2021-35036): Zyxel super-admin password leak affecting multiple router models
-- <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" /> [`CVE-2021-21735`](https://nvd.nist.gov/vuln/detail/CVE-2021-21735): ZTE H168N authentication bypass
-- <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" /> [`CVE-2026-34472`](https://www.cve.org/CVERecord?id=CVE-2026-34472): ZTE ZXHN H188A unauthenticated credential disclosure in the web wizard interface
-- <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" /> [`CVE-2026-34473`](https://www.cve.org/CVERecord?id=CVE-2026-34473): ZTE ZXHN H-series multiple-model unauthenticated denial of service in the management interface
-- <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" /> [`CVE-2026-34474`](https://www.cve.org/CVERecord?id=CVE-2026-34474): ZTE ZXHN H298A and H108N admin and WLAN credential disclosure through the web interface
+<ul>
+  <li><img src="https://img.shields.io/badge/Zyxel-0F766E?style=flat-square" alt="Zyxel" />&nbsp;<img src="https://img.shields.io/badge/1%20model-1F2937?style=flat-square" alt="1 model" />&nbsp;<a href="https://nvd.nist.gov/vuln/detail/CVE-2021-35036"><code>CVE-2021-35036</code></a>: Zyxel VMG3625-T50B super-admin password disclosure exposing the device's highest-privilege credentials</li>
+  <li><img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" />&nbsp;<a href="https://nvd.nist.gov/vuln/detail/CVE-2021-21735"><code>CVE-2021-21735</code></a>: ZTE H168N authentication bypass exposing full access to the router management interface</li>
+  <li><img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" />&nbsp;<img src="https://img.shields.io/badge/2%20firmware%20builds-1F2937?style=flat-square" alt="2 firmware builds" />&nbsp;<a href="https://www.cve.org/CVERecord?id=CVE-2026-34472"><code>CVE-2026-34472</code></a>: ZTE ZXHN H188A credential disclosure in the web wizard exposing admin, WLAN, and PPPoE secrets in a single unauthenticated path</li>
+  <li><img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" />&nbsp;<img src="https://img.shields.io/badge/17%20models-1F2937?style=flat-square" alt="17 models" />&nbsp;<a href="https://www.cve.org/CVERecord?id=CVE-2026-34473"><code>CVE-2026-34473</code></a>: ZTE ZXHN H-series unauthenticated denial of service impacting a broad 17-model router fleet through the management interface</li>
+  <li><img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" />&nbsp;<img src="https://img.shields.io/badge/2%20models-1F2937?style=flat-square" alt="2 models" />&nbsp;<a href="https://www.cve.org/CVERecord?id=CVE-2026-34474"><code>CVE-2026-34474</code></a>: ZTE ZXHN H298A and H108N credential disclosure through the web interface, exposing admin and WLAN access across two router models</li>
+</ul>
 <!--CVE_SECTION_END-->
 
 ### Other Findings And Analyses
 
 - Account takeover on OLX Middle East via password-reset logic abuse
 - Race condition in Medium's voting flow that enabled count manipulation
-- [`ShotBird`](https://monxresearch-sec.github.io/shotbird-extension-malware-report/) analysis in March 2026: ownership-transfer to browser-based C2 chain, credential and form-data capture, and follow-on Windows credential targeting
-- Hack The Box work focused on systematic enumeration, common web vulnerabilities, and Linux privilege escalation
+- [`ShotBird`](https://monxresearch-sec.github.io/shotbird-extension-malware-report/) analysis in March 2026: published teardown of an ownership-transfer-to-browser-C2 chain with credential and form-data capture plus follow-on Windows credential targeting
+- Hack The Box work that sharpened systematic enumeration, common web-vulnerability discovery, and Linux privilege escalation
 
 ## Selected Public Projects
 
 | Project | Why it matters |
 | --- | --- |
-| [Youtube-Downloader-Bookmarklet](https://github.com/minanagehsalalma/Youtube-Downloader-Bookmarklet) | Strongest public repo by stars; a JavaScript bookmarklet with real usage traction. |
-| [huawei-dg8045-hg630-hg633-Config-file-decryption-and-password-decode](https://github.com/minanagehsalalma/huawei-dg8045-hg630-hg633-Config-file-decryption-and-password-decode) | Router-focused work that matches the security and firmware side of the profile. |
-| [burpsuite-custom-extension](https://github.com/minanagehsalalma/burpsuite-custom-extension) | Current Python Burp extension work for response modification and testing workflows. |
-| [BookMarkletsWiki](https://github.com/minanagehsalalma/BookMarkletsWiki) | Practical browser tooling collected into one place. |
-| [Ubicast-Video-Downloader](https://github.com/minanagehsalalma/Ubicast-Video-Downloader) | Small targeted JavaScript tooling with a clear one-click use case. |
-| [WIFI-Location-Locator-GUI](https://github.com/minanagehsalalma/WIFI-Location-Locator-GUI) | Public Wi-Fi utility work that aligns with the network side of the profile. |
+| [Youtube-Downloader-Bookmarklet](https://github.com/minanagehsalalma/Youtube-Downloader-Bookmarklet) | Highest-traction public repo by stars; a JavaScript bookmarklet with clear real-world usage. |
+| [huawei-dg8045-hg630-hg633-Config-file-decryption-and-password-decode](https://github.com/minanagehsalalma/huawei-dg8045-hg630-hg633-Config-file-decryption-and-password-decode) | Direct evidence of hands-on firmware and config-recovery work in the router/security niche. |
+| [burpsuite-custom-extension](https://github.com/minanagehsalalma/burpsuite-custom-extension) | Shows active extension development for live response modification and testing workflows. |
+| [BookMarkletsWiki](https://github.com/minanagehsalalma/BookMarkletsWiki) | Demonstrates repeatable browser-side tooling instead of one-off snippets. |
+| [Ubicast-Video-Downloader](https://github.com/minanagehsalalma/Ubicast-Video-Downloader) | Lean JavaScript utility work with a direct one-click use case. |
+| [WIFI-Location-Locator-GUI](https://github.com/minanagehsalalma/WIFI-Location-Locator-GUI) | Supports the network and wireless side of the profile with a usable public tool. |
 
 ## Selected Gists
 
 | Gist | Why it matters |
 | --- | --- |
-| [ZTE ZXHN router vulnerabilities](https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9) | Supplemental public reference write-up for the 2026 ZTE/ZXHN CVE disclosures. |
-| [Export Chrome extensions inventory](https://gist.github.com/minanagehsalalma/351e506118b26ccc886292ab22ab63cf) | Practical PowerShell inventory/export tooling for browser-extension analysis and auditing. |
-| [Milanote Board to Markdown](https://gist.github.com/minanagehsalalma/63e956ab9f402261bd618375b27f5899) | Useful browser automation work that turns visual boards into markdown output. |
-| [Reddit post exporter](https://gist.github.com/minanagehsalalma/9bd62eda8a59d09653c3b767e4e3cee3) | Tampermonkey-based structured export tooling with a clear LLM/data-prep use case. |
+| [ZTE ZXHN router vulnerabilities](https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9) | Public technical reference for the 2026 ZTE/ZXHN CVE disclosures. |
+| [Export Chrome extensions inventory](https://gist.github.com/minanagehsalalma/351e506118b26ccc886292ab22ab63cf) | Practical PowerShell tooling for browser-extension inventory, triage, and auditing. |
+| [Milanote Board to Markdown](https://gist.github.com/minanagehsalalma/63e956ab9f402261bd618375b27f5899) | Browser automation that turns visual boards into structured markdown output. |
+| [Reddit post exporter](https://gist.github.com/minanagehsalalma/9bd62eda8a59d09653c3b767e4e3cee3) | Tampermonkey-based structured export tooling with a strong LLM and data-prep use case. |
 
 ## Experience And Education
 
