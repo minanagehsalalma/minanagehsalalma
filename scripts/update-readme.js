@@ -146,16 +146,16 @@ function buildCveBlock(item, lead, suffix = "") {
     buildScopeBadge(item.scope_badge),
     buildTypeBadge(item.type_badge),
     buildStatusBadge(item.status_badge),
-  ].join("").trim();
+  ].join("").replace(/&nbsp;$/, "");
 
   const product = item.product ? ` — ${item.product}` : "";
   const impact = item.impact || item.summary || "";
 
   return [
     "<p>",
+    `  ${badgeLine}<br/>`,
     `  <strong>${lead}</strong>${product}<br/>`,
-    `  ${impact}${suffix}<br/>`,
-    `  ${badgeLine}`,
+    `  ${impact}${suffix}`,
     "</p>",
   ].join("\n");
 }
