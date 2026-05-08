@@ -22,7 +22,7 @@
   </a>
   <!--METRICS_BADGES_START-->
   <a href="https://github.com/minanagehsalalma?tab=repositories">
-    <img src="https://img.shields.io/badge/Public%20Repos-40-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Public repositories" />
+    <img src="https://img.shields.io/badge/Public%20Repos-41-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Public repositories" />
   </a>
   <a href="https://github.com/minanagehsalalma?tab=repositories">
     <img src="https://img.shields.io/badge/Public%20Stars-93-111111?style=for-the-badge&logo=github&logoColor=white" alt="Public stars" />
@@ -39,7 +39,7 @@
 <!--SIGNAL_START-->
 ## Operational Snapshot
 
-> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-05-08 19:14 UTC
+> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-05-08 19:19 UTC
 
 <table>
   <tr>
@@ -94,11 +94,11 @@
 ### Public CVEs
 
 <ul>
-  <li><img src="https://img.shields.io/badge/Zyxel-0F766E?style=flat-square" alt="Zyxel" />&nbsp;<img src="https://img.shields.io/badge/1%20model-1F2937?style=flat-square" alt="1 model" />&nbsp;<a href="https://nvd.nist.gov/vuln/detail/CVE-2021-35036"><code>CVE-2021-35036</code></a>: Zyxel VMG3625-T50B super-admin password disclosure exposing the device's highest-privilege credentials</li>
-  <li><img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" />&nbsp;<a href="https://nvd.nist.gov/vuln/detail/CVE-2021-21735"><code>CVE-2021-21735</code></a>: ZTE H168N authentication bypass exposing full access to the router management interface</li>
-  <li><img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" />&nbsp;<img src="https://img.shields.io/badge/2%20firmware%20builds-1F2937?style=flat-square" alt="2 firmware builds" />&nbsp;<a href="https://www.cve.org/CVERecord?id=CVE-2026-34472"><code>CVE-2026-34472</code></a>: ZTE ZXHN H188A credential disclosure in the web wizard exposing admin, WLAN, and PPPoE secrets in a single unauthenticated path</li>
-  <li><img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" />&nbsp;<img src="https://img.shields.io/badge/17%20models-1F2937?style=flat-square" alt="17 models" />&nbsp;<a href="https://www.cve.org/CVERecord?id=CVE-2026-34473"><code>CVE-2026-34473</code></a>: ZTE ZXHN H-series unauthenticated denial of service impacting a broad 17-model router fleet through the management interface</li>
-  <li><img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" />&nbsp;<img src="https://img.shields.io/badge/2%20models-1F2937?style=flat-square" alt="2 models" />&nbsp;<a href="https://www.cve.org/CVERecord?id=CVE-2026-34474"><code>CVE-2026-34474</code></a>: ZTE ZXHN H298A and H108N credential disclosure through the web interface, exposing admin and WLAN access across two router models</li>
+  <li><img src="https://img.shields.io/badge/Zyxel-0F766E?style=flat-square" alt="Zyxel" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/1%20model-1F2937?style=flat-square" alt="1 model" height="20" align="absmiddle" />&nbsp;<a href="https://nvd.nist.gov/vuln/detail/CVE-2021-35036"><code>CVE-2021-35036</code></a>: Zyxel VMG3625-T50B super-admin password disclosure exposing the device's highest-privilege credentials</li>
+  <li><img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<a href="https://nvd.nist.gov/vuln/detail/CVE-2021-21735"><code>CVE-2021-21735</code></a>: ZTE H168N authentication bypass exposing full access to the router management interface</li>
+  <li><img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/2%20firmware%20builds-1F2937?style=flat-square" alt="2 firmware builds" height="20" align="absmiddle" />&nbsp;<a href="https://www.cve.org/CVERecord?id=CVE-2026-34472"><code>CVE-2026-34472</code></a>: ZTE ZXHN H188A credential disclosure in the web wizard exposing admin, WLAN, and PPPoE secrets in a single unauthenticated path</li>
+  <li><img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/17%20models-1F2937?style=flat-square" alt="17 models" height="20" align="absmiddle" />&nbsp;<a href="https://www.cve.org/CVERecord?id=CVE-2026-34473"><code>CVE-2026-34473</code></a>: ZTE ZXHN H-series unauthenticated denial of service impacting a broad 17-model router fleet through the management interface</li>
+  <li><img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/2%20models-1F2937?style=flat-square" alt="2 models" height="20" align="absmiddle" />&nbsp;<a href="https://www.cve.org/CVERecord?id=CVE-2026-34474"><code>CVE-2026-34474</code></a>: ZTE ZXHN H298A and H108N credential disclosure through the web interface, exposing admin and WLAN access across two router models</li>
 </ul>
 <!--CVE_SECTION_END-->
 

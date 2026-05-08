@@ -85,7 +85,7 @@ function buildVendorBadge(vendor) {
     return "";
   }
   const label = encodeURIComponent(meta.label);
-  return `<img src="https://img.shields.io/badge/${label}-${meta.color}?style=flat-square" alt="${meta.label}" />&nbsp;`;
+  return `<img src="https://img.shields.io/badge/${label}-${meta.color}?style=flat-square" alt="${meta.label}" height="20" align="absmiddle" />&nbsp;`;
 }
 
 function buildScopeBadge(scopeBadge) {
@@ -93,7 +93,7 @@ function buildScopeBadge(scopeBadge) {
   if (!label) {
     return "";
   }
-  return `<img src="https://img.shields.io/badge/${encodeURIComponent(label)}-1F2937?style=flat-square" alt="${label}" />&nbsp;`;
+  return `<img src="https://img.shields.io/badge/${encodeURIComponent(label)}-1F2937?style=flat-square" alt="${label}" height="20" align="absmiddle" />&nbsp;`;
 }
 
 function getSharedAssignedReference(cves) {
