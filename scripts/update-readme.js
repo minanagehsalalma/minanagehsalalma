@@ -153,8 +153,9 @@ function buildCveBlock(item, lead, suffix = "") {
 
   return [
     "<p>",
-    `  ${badgeLine}<strong>${lead}</strong>${product}<br/>`,
-    `  ${impact}${suffix}`,
+    `  <strong>${lead}</strong>${product}<br/>`,
+    `  ${impact}${suffix}<br/>`,
+    `  ${badgeLine}`,
     "</p>",
   ].join("\n");
 }
