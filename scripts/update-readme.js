@@ -96,7 +96,10 @@ function getTypeMeta(type) {
 function getStatusMeta(status) {
   const normalized = String(status || "").trim().toLowerCase();
   if (normalized === "public") {
-    return { label: "status", message: "Public", color: "2ea043", alt: "Public" };
+    return {
+      alt: "Public",
+      url: "https://img.shields.io/static/v1?label=status&amp;message=Public&amp;color=2ea043&amp;style=flat-square",
+    };
   }
   return null;
 }
@@ -104,6 +107,9 @@ function getStatusMeta(status) {
 function buildBadge(meta) {
   if (!meta) {
     return "";
+  }
+  if (meta.url) {
+    return `<img src="${meta.url}" alt="${meta.alt}" height="20" align="absmiddle" />&nbsp;`;
   }
   const label = encodeURIComponent(meta.label);
   const message = meta.message ? `-${encodeURIComponent(meta.message)}` : "";
