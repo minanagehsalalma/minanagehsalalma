@@ -1,38 +1,58 @@
 {
   "public": [
     {
-      "id": "CVE-2021-35036",
-      "vendor": "Zyxel",
-      "scope_badge": "1 model",
-      "reference_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-35036",
-      "summary": "Zyxel VMG3625-T50B super-admin password disclosure exposing the device's highest-privilege credentials"
-    },
-    {
-      "id": "CVE-2021-21735",
+      "id": "CVE-2026-34474",
       "vendor": "ZTE",
-      "reference_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-21735",
-      "summary": "ZTE H168N authentication bypass exposing full access to the router management interface"
-    },
-    {
-      "id": "CVE-2026-34472",
-      "vendor": "ZTE",
-      "scope_badge": "2 firmware builds",
-      "reference_url": "https://www.cve.org/CVERecord?id=CVE-2026-34472",
-      "summary": "ZTE ZXHN H188A credential disclosure in the web wizard exposing admin, WLAN, and PPPoE secrets in a single unauthenticated path"
+      "product": "ZTE ZXHN H298A/H108N",
+      "impact": "Credential disclosure exposing admin and WLAN access.",
+      "scope_badge": "2 models",
+      "type_badge": "Credential Disclosure",
+      "status_badge": "Public",
+      "reference_url": "https://www.cve.org/CVERecord?id=CVE-2026-34474",
+      "sort_order": 1
     },
     {
       "id": "CVE-2026-34473",
       "vendor": "ZTE",
+      "product": "ZTE ZXHN H-Series",
+      "impact": "Unauthenticated DoS affecting a 17-model router fleet.",
       "scope_badge": "17 models",
+      "type_badge": "DoS",
+      "status_badge": "Public",
       "reference_url": "https://www.cve.org/CVERecord?id=CVE-2026-34473",
-      "summary": "ZTE ZXHN H-series unauthenticated denial of service impacting a broad 17-model router fleet through the management interface"
+      "sort_order": 2
     },
     {
-      "id": "CVE-2026-34474",
+      "id": "CVE-2026-34472",
       "vendor": "ZTE",
-      "scope_badge": "2 models",
-      "reference_url": "https://www.cve.org/CVERecord?id=CVE-2026-34474",
-      "summary": "ZTE ZXHN H298A and H108N credential disclosure through the web interface, exposing admin and WLAN access across two router models"
+      "product": "ZTE ZXHN H188A",
+      "impact": "Web wizard credential disclosure exposing admin, WLAN, and PPPoE secrets.",
+      "scope_badge": "2 firmware builds",
+      "type_badge": "Credential Disclosure",
+      "status_badge": "Public",
+      "reference_url": "https://www.cve.org/CVERecord?id=CVE-2026-34472",
+      "sort_order": 3
+    },
+    {
+      "id": "CVE-2021-35036",
+      "vendor": "Zyxel",
+      "product": "Zyxel VMG3625-T50B",
+      "impact": "Super-admin password disclosure exposing highest-privilege credentials.",
+      "scope_badge": "1 model",
+      "type_badge": "Credential Disclosure",
+      "status_badge": "Public",
+      "reference_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-35036",
+      "sort_order": 4
+    },
+    {
+      "id": "CVE-2021-21735",
+      "vendor": "ZTE",
+      "product": "ZTE H168N",
+      "impact": "Authentication bypass exposing full router admin access.",
+      "type_badge": "Auth Bypass",
+      "status_badge": "Public",
+      "reference_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-21735",
+      "sort_order": 5
     }
   ],
   "assigned": []

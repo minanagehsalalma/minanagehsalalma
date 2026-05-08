@@ -79,8 +79,29 @@ function getVendorMeta(vendor) {
   return null;
 }
 
-function buildVendorBadge(vendor) {
-  const meta = getVendorMeta(vendor);
+function getTypeMeta(type) {
+  const normalized = String(type || "").trim().toLowerCase();
+  if (normalized === "credential disclosure") {
+    return { label: "Credential Disclosure", color: "2563EB" };
+  }
+  if (normalized === "auth bypass") {
+    return { label: "Auth Bypass", color: "F97316" };
+  }
+  if (normalized === "dos") {
+    return { label: "DoS", color: "DC2626" };
+  }
+  return null;
+}
+
+function getStatusMeta(status) {
+  const normalized = String(status || "").trim().toLowerCase();
+  if (normalized === "public") {
+    return { label: "Public", color: "166534" };
+  }
+  return null;
+}
+
+function buildBadge(meta) {
   if (!meta) {
     return "";
   }
@@ -88,19 +109,43 @@ function buildVendorBadge(vendor) {
   return `<img src="https://img.shields.io/badge/${label}-${meta.color}?style=flat-square" alt="${meta.label}" height="20" align="absmiddle" />&nbsp;`;
 }
 
+function buildVendorBadge(vendor) {
+  return buildBadge(getVendorMeta(vendor));
+}
+
 function buildScopeBadge(scopeBadge) {
   const label = String(scopeBadge || "").trim();
   if (!label) {
     return "";
   }
-  return `<img src="https://img.shields.io/badge/${encodeURIComponent(label)}-1F2937?style=flat-square" alt="${label}" height="20" align="absmiddle" />&nbsp;`;
+  return buildBadge({ label, color: "1F2937" });
 }
 
-function buildCveListItem(item, lead, suffix = "") {
-  const badgeLine = `${buildVendorBadge(item.vendor)}${buildScopeBadge(item.scope_badge)}`.trim();
+function buildTypeBadge(typeBadge) {
+  return buildBadge(getTypeMeta(typeBadge));
+}
+
+function buildStatusBadge(statusBadge) {
+  return buildBadge(getStatusMeta(statusBadge));
+}
+
+function buildCveBlock(item, lead, suffix = "") {
+  const badgeLine = [
+    buildVendorBadge(item.vendor),
+    buildScopeBadge(item.scope_badge),
+    buildTypeBadge(item.type_badge),
+    buildStatusBadge(item.status_badge),
+  ].join("").trim();
+
+  const product = item.product ? ` — ${item.product}` : "";
+  const impact = item.impact || item.summary || "";
+
   return [
-    `<div>&nbsp;&nbsp;&nbsp;&nbsp;${badgeLine}</div>`,
-    `<div>&bull;&nbsp;${lead}: ${item.summary}${suffix}</div>`,
+    "<p>",
+    `  <strong>${lead}</strong>${product}<br/>`,
+    `  ${impact}${suffix}<br/>`,
+    `  ${badgeLine}`,
+    "</p>",
   ].join("\n");
 }
 
@@ -140,8 +185,9 @@ function buildCveSection(cves) {
   if (cves.public.length === 0) {
     parts.push("- No public CVEs listed yet.");
   } else {
-    for (const item of cves.public) {
-      parts.push(buildCveListItem(item, `<a href="${item.reference_url}"><code>${item.id}</code></a>`));
+    const publicCves = [...cves.public].sort((a, b) => (a.sort_order ?? 999) - (b.sort_order ?? 999));
+    for (const item of publicCves) {
+      parts.push(buildCveBlock(item, `<a href="${item.reference_url}"><code>${item.id}</code></a>`));
     }
   }
 
@@ -159,12 +205,13 @@ function buildCveSection(cves) {
       parts.push(`_All three currently share a single [reference gist](${sharedAssignedReference})._`, "");
     }
 
-    for (const item of cves.assigned) {
+    const assignedCves = [...cves.assigned].sort((a, b) => (a.sort_order ?? 999) - (b.sort_order ?? 999));
+    for (const item of assignedCves) {
       const suffix = sharedNote || !item.status_note ? "" : ` (${item.status_note})`;
       const lead = sharedAssignedReference
         ? `<code>${item.id}</code>`
         : (item.reference_url ? `<a href="${item.reference_url}"><code>${item.id}</code></a>` : `<code>${item.id}</code>`);
-      parts.push(buildCveListItem(item, lead, suffix));
+      parts.push(buildCveBlock(item, lead, suffix));
     }
   }
 
