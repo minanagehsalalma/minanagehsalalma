@@ -41,7 +41,7 @@
   <text x="896" y="161" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Synack Red Team Researcher</text>
   <rect x="874" y="184" width="254" height="56" rx="14" fill="#0A1628" stroke="#233650"/>
   <text x="896" y="207" fill="#6C819C" font-family="Consolas, 'Courier New', monospace" font-size="12">DISCLOSURE</text>
-  <text x="896" y="227" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">5 CVEs tracked / active flow</text>
+  <text x="896" y="227" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">5 public CVEs / active research</text>
   <rect x="874" y="250" width="254" height="38" rx="14" fill="#0A1628" stroke="#233650"/>
   <text x="896" y="273" fill="#6C819C" font-family="Consolas, 'Courier New', monospace" font-size="12">METHOD</text>
   <text x="960" y="273" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">reports / tooling</text>

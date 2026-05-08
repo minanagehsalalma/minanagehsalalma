@@ -9,26 +9,22 @@
       "id": "CVE-2021-21735",
       "reference_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-21735",
       "summary": "ZTE H168N authentication bypass"
-    }
-  ],
-  "assigned": [
+    },
     {
       "id": "CVE-2026-34472",
-      "reference_url": "https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9",
-      "summary": "ZXHN H188A V6.0 unauthenticated credential disclosure via the web wizard, leading to admin, WLAN, and PPPoE credential exposure and auth bypass",
-      "status_note": "Assigned by MITRE in March 2026. Public reference gist is available."
+      "reference_url": "https://www.cve.org/CVERecord?id=CVE-2026-34472",
+      "summary": "ZTE ZXHN H188A unauthenticated credential disclosure in the web wizard interface"
     },
     {
       "id": "CVE-2026-34473",
-      "reference_url": "https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9",
-      "summary": "ZXHN H-series multiple models unauthenticated denial of service via oversized `application/x-www-form-urlencoded` POST bodies against the management interface",
-      "status_note": "Assigned by MITRE in March 2026. Public reference gist is available."
+      "reference_url": "https://www.cve.org/CVERecord?id=CVE-2026-34473",
+      "summary": "ZTE ZXHN H-series multiple-model unauthenticated denial of service in the management interface"
     },
     {
       "id": "CVE-2026-34474",
-      "reference_url": "https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9",
-      "summary": "ZXHN H298A and H108N sensitive data exposure through the web interface, leading to admin and WLAN credential disclosure",
-      "status_note": "Assigned by MITRE in March 2026. Public reference gist is available."
+      "reference_url": "https://www.cve.org/CVERecord?id=CVE-2026-34474",
+      "summary": "ZTE ZXHN H298A and H108N admin and WLAN credential disclosure through the web interface"
     }
-  ]
+  ],
+  "assigned": []
 }

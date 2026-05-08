@@ -60,17 +60,14 @@
 
 <p>
   <a href="#public-cves">
-    <img src="https://img.shields.io/badge/Public%20CVEs-2-0F766E?style=for-the-badge" alt="Public CVEs" />
-  </a>
-  <a href="#assigned-cve-ids">
-    <img src="https://img.shields.io/badge/Assigned%20CVE%20IDs-3-7C3AED?style=for-the-badge" alt="Assigned CVE IDs" />
+    <img src="https://img.shields.io/badge/Public%20CVEs-5-0F766E?style=for-the-badge" alt="Public CVEs" />
   </a>
   <a href="#selected-security-work">
     <img src="https://img.shields.io/badge/Status-Active%20Research-166534?style=for-the-badge" alt="Active research" />
   </a>
 </p>
 
-<p><strong>Status note:</strong> All assigned 2026 CVE IDs are currently covered in a single public <a href="https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9">reference gist</a> and can move into the public CVE section once broader publication catches up.</p>
+<p><strong>Status note:</strong> All tracked CVE records listed below currently have public references.</p>
 <!--SIGNAL_END-->
 
 ## Contribution Activity
@@ -98,16 +95,9 @@
 
 - [`CVE-2021-35036`](https://nvd.nist.gov/vuln/detail/CVE-2021-35036): Zyxel super-admin password leak affecting multiple router models
 - [`CVE-2021-21735`](https://nvd.nist.gov/vuln/detail/CVE-2021-21735): ZTE H168N authentication bypass
-
-### Assigned CVE IDs
-
-_Assigned by MITRE in March 2026. Public reference gist is available._
-
-_All three currently share a single [reference gist](https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9)._
-
-- `CVE-2026-34472`: ZXHN H188A V6.0 unauthenticated credential disclosure via the web wizard, leading to admin, WLAN, and PPPoE credential exposure and auth bypass
-- `CVE-2026-34473`: ZXHN H-series multiple models unauthenticated denial of service via oversized `application/x-www-form-urlencoded` POST bodies against the management interface
-- `CVE-2026-34474`: ZXHN H298A and H108N sensitive data exposure through the web interface, leading to admin and WLAN credential disclosure
+- [`CVE-2026-34472`](https://www.cve.org/CVERecord?id=CVE-2026-34472): ZTE ZXHN H188A unauthenticated credential disclosure in the web wizard interface
+- [`CVE-2026-34473`](https://www.cve.org/CVERecord?id=CVE-2026-34473): ZTE ZXHN H-series multiple-model unauthenticated denial of service in the management interface
+- [`CVE-2026-34474`](https://www.cve.org/CVERecord?id=CVE-2026-34474): ZTE ZXHN H298A and H108N admin and WLAN credential disclosure through the web interface
 <!--CVE_SECTION_END-->
 
 ### Other Findings And Analyses
@@ -132,7 +122,7 @@ _All three currently share a single [reference gist](https://gist.github.com/min
 
 | Gist | Why it matters |
 | --- | --- |
-| [ZTE ZXHN router vulnerabilities](https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9) | Public reference write-up for the assigned 2026 ZTE/ZXHN CVE IDs. |
+| [ZTE ZXHN router vulnerabilities](https://gist.github.com/minanagehsalalma/7a8516b9b00d0008f2f25750320560c9) | Supplemental public reference write-up for the 2026 ZTE/ZXHN CVE disclosures. |
 | [Export Chrome extensions inventory](https://gist.github.com/minanagehsalalma/351e506118b26ccc886292ab22ab63cf) | Practical PowerShell inventory/export tooling for browser-extension analysis and auditing. |
 | [Milanote Board to Markdown](https://gist.github.com/minanagehsalalma/63e956ab9f402261bd618375b27f5899) | Useful browser automation work that turns visual boards into markdown output. |
 | [Reddit post exporter](https://gist.github.com/minanagehsalalma/9bd62eda8a59d09653c3b767e4e3cee3) | Tampermonkey-based structured export tooling with a clear LLM/data-prep use case. |

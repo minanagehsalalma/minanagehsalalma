@@ -97,7 +97,7 @@ function buildCveRecordLine(cves) {
   if (cves.assigned.length > 0) {
     return "<p><strong>Status note:</strong> The assigned CVE IDs are tracked here and will move into the public CVE section once public reference URLs are available.</p>";
   }
-  return "<p><strong>Status note:</strong> All tracked CVE records listed here currently have public references.</p>";
+  return "<p><strong>Status note:</strong> All tracked CVE records listed below currently have public references.</p>";
 }
 
 function buildCveSection(cves) {
@@ -113,10 +113,8 @@ function buildCveSection(cves) {
     }
   }
 
-  parts.push("", "### Assigned CVE IDs", "");
-  if (cves.assigned.length === 0) {
-    parts.push("- No assigned CVE IDs pending publication.");
-  } else {
+  if (cves.assigned.length > 0) {
+    parts.push("", "### Assigned CVE IDs", "");
     const sharedNote = cves.assigned.every((item) => item.status_note === cves.assigned[0]?.status_note)
       ? cves.assigned[0].status_note
       : null;
@@ -173,9 +171,13 @@ async function main() {
     '  <a href="#public-cves">',
     `    <img src="https://img.shields.io/badge/Public%20CVEs-${cves.public.length}-0F766E?style=for-the-badge" alt="Public CVEs" />`,
     "  </a>",
-    '  <a href="#assigned-cve-ids">',
-    `    <img src="https://img.shields.io/badge/Assigned%20CVE%20IDs-${cves.assigned.length}-7C3AED?style=for-the-badge" alt="Assigned CVE IDs" />`,
-    "  </a>",
+    ...(cves.assigned.length > 0
+      ? [
+          '  <a href="#assigned-cve-ids">',
+          `    <img src="https://img.shields.io/badge/Assigned%20CVE%20IDs-${cves.assigned.length}-7C3AED?style=for-the-badge" alt="Assigned CVE IDs" />`,
+          "  </a>",
+        ]
+      : []),
     '  <a href="#selected-security-work">',
     '    <img src="https://img.shields.io/badge/Status-Active%20Research-166534?style=for-the-badge" alt="Active research" />',
     "  </a>",
