@@ -98,7 +98,7 @@ function getStatusMeta(status) {
   if (normalized === "public") {
     return {
       alt: "Public",
-      url: "https://img.shields.io/static/v1?label=status&amp;message=Public&amp;color=2ea043&amp;style=flat-square",
+      url: "https://img.shields.io/badge/-Public-2ea043?style=flat-square",
     };
   }
   return null;

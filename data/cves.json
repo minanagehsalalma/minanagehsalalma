@@ -3,7 +3,7 @@
     {
       "id": "CVE-2026-34474",
       "vendor": "ZTE",
-      "product": "ZTE ZXHN H298A/H108N",
+      "product": "ZTE ZXHN H298A / H108N",
       "impact": "Credential disclosure exposing admin and WLAN access.",
       "scope_badge": "2 models",
       "type_badge": "Credential Disclosure",
