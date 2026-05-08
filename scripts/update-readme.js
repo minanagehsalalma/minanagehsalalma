@@ -96,6 +96,9 @@ function getTypeMeta(type) {
   if (normalized === "super-admin password leak") {
     return { label: "Super-Admin Password Leak", color: "BE123C" };
   }
+  if (normalized === "high impact") {
+    return { label: "High Impact", color: "B91C1C" };
+  }
   return null;
 }
 
@@ -105,6 +108,12 @@ function getStatusMeta(status) {
     return {
       alt: "Public",
       url: "https://img.shields.io/badge/-Public-2ea043?style=flat-square",
+    };
+  }
+  if (normalized === "assigned") {
+    return {
+      alt: "Assigned",
+      url: "https://img.shields.io/badge/-Assigned-B45309?style=flat-square",
     };
   }
   return null;
@@ -186,7 +195,7 @@ function buildCveRecordLine(cves) {
     return "<p><strong>Status note:</strong> The assigned CVE IDs now have public reference URLs and will move into the public CVE section once broader publication catches up.</p>";
   }
   if (cves.assigned.length > 0) {
-    return "<p><strong>Status note:</strong> The assigned CVE IDs are tracked here and will move into the public CVE section once public reference URLs are available.</p>";
+    return `<p><strong>Status note:</strong> ${cves.public.length} public CVE records are listed below; ${cves.assigned.length} assigned CVE ID is tracked separately until public reference URLs are available.</p>`;
   }
   return `<p><strong>Status note:</strong> ${cves.public.length} public CVE records are listed below, each backed by a direct public reference.</p>`;
 }

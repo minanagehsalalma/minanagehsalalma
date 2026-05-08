@@ -39,7 +39,7 @@
 <!--SIGNAL_START-->
 ## Operational Snapshot
 
-> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-05-08 20:06 UTC
+> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-05-08 20:14 UTC
 
 <table>
   <tr>
@@ -62,12 +62,15 @@
   <a href="#public-cves">
     <img src="https://img.shields.io/badge/Public%20CVEs-5-0F766E?style=for-the-badge" alt="Public CVEs" />
   </a>
+  <a href="#assigned-cve-ids">
+    <img src="https://img.shields.io/badge/Assigned%20CVE%20IDs-1-7C3AED?style=for-the-badge" alt="Assigned CVE IDs" />
+  </a>
   <a href="#selected-security-work">
     <img src="https://img.shields.io/badge/Status-Active%20Research-166534?style=for-the-badge" alt="Active research" />
   </a>
 </p>
 
-<p><strong>Status note:</strong> 5 public CVE records are listed below, each backed by a direct public reference.</p>
+<p><strong>Status note:</strong> 5 public CVE records are listed below; 1 assigned CVE ID is tracked separately until public reference URLs are available.</p>
 <!--SIGNAL_END-->
 
 ## Contribution Activity
@@ -117,6 +120,16 @@
   <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/1%20model-1F2937?style=flat-square" alt="1 model" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Auth%20Bypass-F97316?style=flat-square" alt="Auth Bypass" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
   <strong><a href="https://support.zte.com.cn/support/news/LoopholeInfoDetail.aspx?newsId=1015924"><code>CVE-2021-21735</code></a></strong> — ZTE ZXHN H168N<br/>
   Authentication bypass exposing full router admin access.
+</p>
+
+### Assigned CVE IDs
+
+_Assigned CVE pending public publication in July 2026; technical details are intentionally withheld until the record is public._
+
+<p>
+  <img src="https://img.shields.io/badge/Zyxel-0F766E?style=flat-square" alt="Zyxel" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/July%202026-1F2937?style=flat-square" alt="July 2026" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/High%20Impact-B91C1C?style=flat-square" alt="High Impact" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Assigned-B45309?style=flat-square" alt="Assigned" height="20" align="absmiddle" /><br/>
+  <strong><code>CVE-2026-6837</code></strong> — Zyxel router vulnerability<br/>
+  High-impact Zyxel vulnerability assigned for July 2026 publication; technical details withheld until the public record is released.
 </p>
 <!--CVE_SECTION_END-->
 
