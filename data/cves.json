@@ -58,6 +58,17 @@
   ],
   "assigned": [
     {
+      "id": "CVE-2026-8508",
+      "vendor": "Zyxel",
+      "product": "Zyxel router vulnerability",
+      "impact": "Medium-impact Zyxel vulnerability assigned for July 2026 publication; technical details withheld until the public record is released.",
+      "scope_badge": "July 2026",
+      "type_badge": "Medium Impact",
+      "status_badge": "Assigned",
+      "status_note": "Assigned CVEs pending public publication in July 2026; technical details are intentionally withheld until the records are public.",
+      "sort_order": 1
+    },
+    {
       "id": "CVE-2026-6837",
       "vendor": "Zyxel",
       "product": "Zyxel router vulnerability",
@@ -65,8 +76,8 @@
       "scope_badge": "July 2026",
       "type_badge": "High Impact",
       "status_badge": "Assigned",
-      "status_note": "Assigned CVE pending public publication in July 2026; technical details are intentionally withheld until the record is public.",
-      "sort_order": 1
+      "status_note": "Assigned CVEs pending public publication in July 2026; technical details are intentionally withheld until the records are public.",
+      "sort_order": 2
     }
   ]
 }

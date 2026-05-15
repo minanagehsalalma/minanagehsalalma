@@ -99,6 +99,9 @@ function getTypeMeta(type) {
   if (normalized === "high impact") {
     return { label: "High Impact", color: "B91C1C" };
   }
+  if (normalized === "medium impact") {
+    return { label: "Medium Impact", color: "C2410C" };
+  }
   return null;
 }
 
@@ -188,14 +191,15 @@ function getSharedAssignedReference(cves) {
 function buildCveRecordLine(cves) {
   const sharedAssignedReference = getSharedAssignedReference(cves);
   if (sharedAssignedReference) {
-    return `<p><strong>Status note:</strong> All assigned 2026 CVE IDs are currently covered in a single public <a href="${sharedAssignedReference}">reference gist</a> and can move into the public CVE section once broader publication catches up.</p>`;
+    return `<p><strong>Status note:</strong> All ${cves.assigned.length} assigned 2026 CVE IDs are currently covered in a single public <a href="${sharedAssignedReference}">reference gist</a> and can move into the public CVE section once broader publication catches up.</p>`;
   }
   const assignedWithReferences = cves.assigned.filter((item) => item.reference_url).length;
   if (cves.assigned.length > 0 && assignedWithReferences === cves.assigned.length) {
     return "<p><strong>Status note:</strong> The assigned CVE IDs now have public reference URLs and will move into the public CVE section once broader publication catches up.</p>";
   }
   if (cves.assigned.length > 0) {
-    return `<p><strong>Status note:</strong> ${cves.public.length} public CVE records are listed below; ${cves.assigned.length} assigned CVE ID is tracked separately until public reference URLs are available.</p>`;
+    const assignedLabel = cves.assigned.length === 1 ? "assigned CVE ID is" : "assigned CVE IDs are";
+    return `<p><strong>Status note:</strong> ${cves.public.length} public CVE records are listed below; ${cves.assigned.length} ${assignedLabel} tracked separately until public reference URLs are available.</p>`;
   }
   return `<p><strong>Status note:</strong> ${cves.public.length} public CVE records are listed below, each backed by a direct public reference.</p>`;
 }
@@ -225,7 +229,7 @@ function buildCveSection(cves) {
     }
 
     if (sharedAssignedReference) {
-      parts.push(`_All three currently share a single [reference gist](${sharedAssignedReference})._`, "");
+      parts.push(`_All ${cves.assigned.length} currently share a single [reference gist](${sharedAssignedReference})._`, "");
     }
 
     const assignedCves = [...cves.assigned].sort((a, b) => (a.sort_order ?? 999) - (b.sort_order ?? 999));

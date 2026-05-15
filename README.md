@@ -39,7 +39,7 @@
 <!--SIGNAL_START-->
 ## Operational Snapshot
 
-> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-05-15 09:23 UTC
+> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-05-15 17:11 UTC
 
 <table>
   <tr>
@@ -63,14 +63,14 @@
     <img src="https://img.shields.io/badge/Public%20CVEs-5-0F766E?style=for-the-badge" alt="Public CVEs" />
   </a>
   <a href="#assigned-cve-ids">
-    <img src="https://img.shields.io/badge/Assigned%20CVE%20IDs-1-7C3AED?style=for-the-badge" alt="Assigned CVE IDs" />
+    <img src="https://img.shields.io/badge/Assigned%20CVE%20IDs-2-7C3AED?style=for-the-badge" alt="Assigned CVE IDs" />
   </a>
   <a href="#selected-security-work">
     <img src="https://img.shields.io/badge/Status-Active%20Research-166534?style=for-the-badge" alt="Active research" />
   </a>
 </p>
 
-<p><strong>Status note:</strong> 5 public CVE records are listed below; 1 assigned CVE ID is tracked separately until public reference URLs are available.</p>
+<p><strong>Status note:</strong> 5 public CVE records are listed below; 2 assigned CVE IDs are tracked separately until public reference URLs are available.</p>
 <!--SIGNAL_END-->
 
 ## Contribution Activity
@@ -124,8 +124,13 @@
 
 ### Assigned CVE IDs
 
-_Assigned CVE pending public publication in July 2026; technical details are intentionally withheld until the record is public._
+_Assigned CVEs pending public publication in July 2026; technical details are intentionally withheld until the records are public._
 
+<p>
+  <img src="https://img.shields.io/badge/Zyxel-0F766E?style=flat-square" alt="Zyxel" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/July%202026-1F2937?style=flat-square" alt="July 2026" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Medium%20Impact-C2410C?style=flat-square" alt="Medium Impact" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Assigned-B45309?style=flat-square" alt="Assigned" height="20" align="absmiddle" /><br/>
+  <strong><code>CVE-2026-8508</code></strong> — Zyxel router vulnerability<br/>
+  Medium-impact Zyxel vulnerability assigned for July 2026 publication; technical details withheld until the public record is released.
+</p>
 <p>
   <img src="https://img.shields.io/badge/Zyxel-0F766E?style=flat-square" alt="Zyxel" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/July%202026-1F2937?style=flat-square" alt="July 2026" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/High%20Impact-B91C1C?style=flat-square" alt="High Impact" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Assigned-B45309?style=flat-square" alt="Assigned" height="20" align="absmiddle" /><br/>
   <strong><code>CVE-2026-6837</code></strong> — Zyxel router vulnerability<br/>
