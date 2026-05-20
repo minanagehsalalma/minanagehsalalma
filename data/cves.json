@@ -8,7 +8,7 @@
       "scope_badge": "2 models",
       "type_badge": "Credential Disclosure",
       "status_badge": "Public",
-      "reference_url": "https://www.cve.org/CVERecord?id=CVE-2026-34474",
+      "reference_url": "https://minanagehsalalma.github.io/cve-2026-34474-zte-h298a-h108n-sensitive-data-exposure",
       "sort_order": 1
     },
     {
@@ -19,7 +19,7 @@
       "scope_badge": "17 models",
       "type_badge": "Denial of Service",
       "status_badge": "Public",
-      "reference_url": "https://www.cve.org/CVERecord?id=CVE-2026-34473",
+      "reference_url": "https://minanagehsalalma.github.io/cve-2026-34473-unauthenticated-dos-zte-routers",
       "sort_order": 2
     },
     {
@@ -30,7 +30,7 @@
       "scope_badge": "1 model / 2 builds",
       "type_badge": "Credential Disclosure",
       "status_badge": "Public",
-      "reference_url": "https://www.cve.org/CVERecord?id=CVE-2026-34472",
+      "reference_url": "https://minanagehsalalma.github.io/cve-2026-34472-auth-bypass-zte-h188a-router",
       "sort_order": 3
     },
     {
@@ -41,7 +41,7 @@
       "scope_badge": "31 models",
       "type_badge": "Super-Admin Password Leak",
       "status_badge": "Public",
-      "reference_url": "https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-cleartext-storage-of-information-vulnerability",
+      "reference_url": "https://minanagehsalalma.github.io/zyxel-cve-2021-35036-super-admin-password-leak/",
       "sort_order": 4
     },
     {
@@ -52,7 +52,7 @@
       "scope_badge": "1 model",
       "type_badge": "Auth Bypass",
       "status_badge": "Public",
-      "reference_url": "https://support.zte.com.cn/support/news/LoopholeInfoDetail.aspx?newsId=1015924",
+      "reference_url": "https://minanagehsalalma.github.io/cve-2021-21735-zte-zxhn-h168n-admin-compromise/",
       "sort_order": 5
     }
   ],
