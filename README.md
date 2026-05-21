@@ -22,7 +22,7 @@
   </a>
   <!--METRICS_BADGES_START-->
   <a href="https://github.com/minanagehsalalma?tab=repositories">
-    <img src="https://img.shields.io/badge/Public%20Repos-44-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Public repositories" />
+    <img src="https://img.shields.io/badge/Public%20Repos-49-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Public repositories" />
   </a>
   <a href="https://github.com/minanagehsalalma?tab=repositories">
     <img src="https://img.shields.io/badge/Public%20Stars-98-111111?style=for-the-badge&logo=github&logoColor=white" alt="Public stars" />
@@ -39,7 +39,7 @@
 <!--SIGNAL_START-->
 ## Operational Snapshot
 
-> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-05-20 09:53 UTC
+> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-05-21 10:01 UTC
 
 <table>
   <tr>
@@ -98,27 +98,27 @@
 
 <p>
   <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/2%20models-1F2937?style=flat-square" alt="2 models" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Credential%20Disclosure-2563EB?style=flat-square" alt="Credential Disclosure" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
-  <strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-34474"><code>CVE-2026-34474</code></a></strong> — ZTE ZXHN H298A / H108N<br/>
+  <strong><a href="https://minanagehsalalma.github.io/cve-2026-34474-zte-h298a-h108n-sensitive-data-exposure"><code>CVE-2026-34474</code></a></strong> — ZTE ZXHN H298A / H108N<br/>
   Credential disclosure exposing admin and WLAN access.
 </p>
 <p>
   <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/17%20models-1F2937?style=flat-square" alt="17 models" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Denial%20of%20Service-DC2626?style=flat-square" alt="Denial of Service" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
-  <strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-34473"><code>CVE-2026-34473</code></a></strong> — ZTE ZXHN H-Series<br/>
+  <strong><a href="https://minanagehsalalma.github.io/cve-2026-34473-unauthenticated-dos-zte-routers"><code>CVE-2026-34473</code></a></strong> — ZTE ZXHN H-Series<br/>
   Unauthenticated denial-of-service condition affecting a 17-model router fleet.
 </p>
 <p>
   <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/1%20model%20%2F%202%20builds-1F2937?style=flat-square" alt="1 model / 2 builds" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Credential%20Disclosure-2563EB?style=flat-square" alt="Credential Disclosure" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
-  <strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-34472"><code>CVE-2026-34472</code></a></strong> — ZTE ZXHN H188A<br/>
+  <strong><a href="https://minanagehsalalma.github.io/cve-2026-34472-auth-bypass-zte-h188a-router"><code>CVE-2026-34472</code></a></strong> — ZTE ZXHN H188A<br/>
   Web wizard credential disclosure exposing admin, WLAN, and PPPoE secrets.
 </p>
 <p>
   <img src="https://img.shields.io/badge/Zyxel-0F766E?style=flat-square" alt="Zyxel" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/31%20models-1F2937?style=flat-square" alt="31 models" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Super-Admin%20Password%20Leak-BE123C?style=flat-square" alt="Super-Admin Password Leak" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
-  <strong><a href="https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-cleartext-storage-of-information-vulnerability"><code>CVE-2021-35036</code></a></strong> — Zyxel CPE / ONT / LTE-5G router fleet<br/>
+  <strong><a href="https://minanagehsalalma.github.io/zyxel-cve-2021-35036-super-admin-password-leak/"><code>CVE-2021-35036</code></a></strong> — Zyxel CPE / ONT / LTE-5G router fleet<br/>
   Super-admin password leak exposing high-privilege router credentials through Zyxel's login-privilege configuration path.
 </p>
 <p>
   <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/1%20model-1F2937?style=flat-square" alt="1 model" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Auth%20Bypass-F97316?style=flat-square" alt="Auth Bypass" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
-  <strong><a href="https://support.zte.com.cn/support/news/LoopholeInfoDetail.aspx?newsId=1015924"><code>CVE-2021-21735</code></a></strong> — ZTE ZXHN H168N<br/>
+  <strong><a href="https://minanagehsalalma.github.io/cve-2021-21735-zte-zxhn-h168n-admin-compromise/"><code>CVE-2021-21735</code></a></strong> — ZTE ZXHN H168N<br/>
   Authentication bypass exposing full router admin access.
 </p>
 
