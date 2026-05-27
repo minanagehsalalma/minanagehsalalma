@@ -22,7 +22,7 @@
   </a>
   <!--METRICS_BADGES_START-->
   <a href="https://github.com/minanagehsalalma?tab=repositories">
-    <img src="https://img.shields.io/badge/Public%20Repos-49-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Public repositories" />
+    <img src="https://img.shields.io/badge/Public%20Repos-48-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Public repositories" />
   </a>
   <a href="https://github.com/minanagehsalalma?tab=repositories">
     <img src="https://img.shields.io/badge/Public%20Stars-103-111111?style=for-the-badge&logo=github&logoColor=white" alt="Public stars" />
@@ -39,7 +39,7 @@
 <!--SIGNAL_START-->
 ## Operational Snapshot
 
-> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-05-26 10:17 UTC
+> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-05-27 10:19 UTC
 
 <table>
   <tr>
