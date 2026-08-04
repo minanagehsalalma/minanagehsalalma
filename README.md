@@ -39,7 +39,7 @@
 <!--SIGNAL_START-->
 ## Operational Snapshot
 
-> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-08-04 09:04 UTC
+> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-08-04 13:39 UTC
 
 <table>
   <tr>
@@ -60,17 +60,14 @@
 
 <p>
   <a href="#public-cves">
-    <img src="https://img.shields.io/badge/Public%20CVEs-5-0F766E?style=for-the-badge" alt="Public CVEs" />
-  </a>
-  <a href="#assigned-cve-ids">
-    <img src="https://img.shields.io/badge/Assigned%20CVE%20IDs-2-7C3AED?style=for-the-badge" alt="Assigned CVE IDs" />
+    <img src="https://img.shields.io/badge/Public%20CVEs-7-0F766E?style=for-the-badge" alt="Public CVEs" />
   </a>
   <a href="#selected-security-work">
     <img src="https://img.shields.io/badge/Status-Active%20Research-166534?style=for-the-badge" alt="Active research" />
   </a>
 </p>
 
-<p><strong>Status note:</strong> 5 public CVE records are listed below; 2 assigned CVE IDs are tracked separately until public reference URLs are available.</p>
+<p><strong>Status note:</strong> 7 public CVE records are listed below, each backed by a direct public reference.</p>
 <!--SIGNAL_END-->
 
 ## Contribution Activity
@@ -87,7 +84,7 @@
 
 - Web vulnerability research with clear reproduction steps, impact framing, and remediation notes
 - Browser-extension and client-side investigations tied to real exploit paths
-- Router, Wi-Fi, and firmware security work with a bias toward findings that survive review
+- Router, Wi-Fi, and firmware security work across embedded web interfaces, command injection, and authentication-boundary failures
 - Python and JavaScript tooling that compresses testing, validation, and reporting time
 - Write-ups that stay technically dense, readable, and useful to engineers
 
@@ -96,6 +93,16 @@
 <!--CVE_SECTION_START-->
 ### Public CVEs
 
+<p>
+  <img src="https://img.shields.io/badge/Zyxel-0F766E?style=flat-square" alt="Zyxel" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/39%20models-1F2937?style=flat-square" alt="39 models" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Improper%20Authentication-C2410C?style=flat-square" alt="Improper Authentication" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
+  <strong><a href="https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-command-injection-and-improper-authentication-vulnerabilities-in-certain-aps-fwa7-and-security-routers-08-04-2026"><code>CVE-2026-8508</code></a></strong> — Zyxel AP / FWA7 / Security Router fleet<br/>
+  Improper authentication in social_login.cgi enabling WLAN attackers to bypass captive portal authentication.
+</p>
+<p>
+  <img src="https://img.shields.io/badge/Zyxel-0F766E?style=flat-square" alt="Zyxel" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/18%20models-1F2937?style=flat-square" alt="18 models" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Command%20Injection-B91C1C?style=flat-square" alt="Command Injection" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
+  <strong><a href="https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-command-injection-and-improper-authentication-vulnerabilities-in-certain-aps-fwa7-and-security-routers-08-04-2026"><code>CVE-2026-6837</code></a></strong> — Zyxel AP firmware<br/>
+  Post-authentication command injection in export-cgi enabling administrator-level attackers to execute OS commands on affected APs.
+</p>
 <p>
   <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/2%20models-1F2937?style=flat-square" alt="2 models" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Credential%20Disclosure-2563EB?style=flat-square" alt="Credential Disclosure" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
   <strong><a href="https://minanagehsalalma.github.io/cve-2026-34474-zte-h298a-h108n-sensitive-data-exposure"><code>CVE-2026-34474</code></a></strong> — ZTE ZXHN H298A / H108N<br/>
@@ -120,21 +127,6 @@
   <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/1%20model-1F2937?style=flat-square" alt="1 model" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Auth%20Bypass-F97316?style=flat-square" alt="Auth Bypass" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
   <strong><a href="https://minanagehsalalma.github.io/cve-2021-21735-zte-zxhn-h168n-admin-compromise/"><code>CVE-2021-21735</code></a></strong> — ZTE ZXHN H168N<br/>
   Authentication bypass exposing full router admin access.
-</p>
-
-### Assigned CVE IDs
-
-_Assigned CVEs pending public publication in July 2026; technical details are intentionally withheld until the records are public._
-
-<p>
-  <img src="https://img.shields.io/badge/Zyxel-0F766E?style=flat-square" alt="Zyxel" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/July%202026-1F2937?style=flat-square" alt="July 2026" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Medium%20Impact-C2410C?style=flat-square" alt="Medium Impact" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Assigned-B45309?style=flat-square" alt="Assigned" height="20" align="absmiddle" /><br/>
-  <strong><code>CVE-2026-8508</code></strong> — Zyxel router vulnerability<br/>
-  Medium-impact Zyxel vulnerability assigned for July 2026 publication; technical details withheld until the public record is released.
-</p>
-<p>
-  <img src="https://img.shields.io/badge/Zyxel-0F766E?style=flat-square" alt="Zyxel" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/July%202026-1F2937?style=flat-square" alt="July 2026" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/High%20Impact-B91C1C?style=flat-square" alt="High Impact" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Assigned-B45309?style=flat-square" alt="Assigned" height="20" align="absmiddle" /><br/>
-  <strong><code>CVE-2026-6837</code></strong> — Zyxel router vulnerability<br/>
-  High-impact Zyxel vulnerability assigned for July 2026 publication; technical details withheld until the public record is released.
 </p>
 <!--CVE_SECTION_END-->
 

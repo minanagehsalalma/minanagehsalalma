@@ -96,6 +96,12 @@ function getTypeMeta(type) {
   if (normalized === "super-admin password leak") {
     return { label: "Super-Admin Password Leak", color: "BE123C" };
   }
+  if (normalized === "command injection") {
+    return { label: "Command Injection", color: "B91C1C" };
+  }
+  if (normalized === "improper authentication") {
+    return { label: "Improper Authentication", color: "C2410C" };
+  }
   if (normalized === "high impact") {
     return { label: "High Impact", color: "B91C1C" };
   }
