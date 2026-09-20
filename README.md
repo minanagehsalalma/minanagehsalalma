@@ -13,7 +13,8 @@
 
 <p align="center">
   Security researcher and engineer focused on high-signal web vulnerability research,
-  browser-side investigations, malware analysis, and practical automation that holds up under scrutiny.
+  mobile/API account-backend flaws, browser-side investigations, malware analysis,
+  and practical automation that holds up under scrutiny.
 </p>
 
 <p align="center">
@@ -22,7 +23,7 @@
   </a>
   <!--METRICS_BADGES_START-->
   <a href="https://github.com/minanagehsalalma?tab=repositories">
-    <img src="https://img.shields.io/badge/Public%20Repos-56-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Public repositories" />
+    <img src="https://img.shields.io/badge/Public%20Repos-58-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Public repositories" />
   </a>
   <a href="https://github.com/minanagehsalalma?tab=repositories">
     <img src="https://img.shields.io/badge/Public%20Stars-113-111111?style=for-the-badge&logo=github&logoColor=white" alt="Public stars" />
@@ -39,7 +40,7 @@
 <!--SIGNAL_START-->
 ## Operational Snapshot
 
-> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-09-20 11:19 UTC
+> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-09-20 19:37 UTC
 
 <table>
   <tr>
@@ -60,14 +61,14 @@
 
 <p>
   <a href="#public-cves">
-    <img src="https://img.shields.io/badge/Public%20CVEs-7-0F766E?style=for-the-badge" alt="Public CVEs" />
+    <img src="https://img.shields.io/badge/Public%20CVEs-11-0F766E?style=for-the-badge" alt="Public CVEs" />
   </a>
   <a href="#selected-security-work">
     <img src="https://img.shields.io/badge/Status-Active%20Research-166534?style=for-the-badge" alt="Active research" />
   </a>
 </p>
 
-<p><strong>Status note:</strong> 7 public CVE records are listed below, each backed by a direct public reference.</p>
+<p><strong>Status note:</strong> 11 public CVE records are listed below, each backed by a direct public reference.</p>
 <!--SIGNAL_END-->
 
 ## Contribution Activity
@@ -83,6 +84,7 @@
 ## What I Work On
 
 - Web vulnerability research with clear reproduction steps, impact framing, and remediation notes
+- Mobile/API account-backend research, including app-auth recovery, account-flow abuse, and coordinated disclosure
 - Browser-extension and client-side investigations tied to real exploit paths
 - Router, Wi-Fi, and firmware security work across embedded web interfaces, command injection, and authentication-boundary failures
 - Python and JavaScript tooling that compresses testing, validation, and reporting time
@@ -93,6 +95,26 @@
 <!--CVE_SECTION_START-->
 ### Public CVEs
 
+<p>
+  <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/8.8%20High-1F2937?style=flat-square" alt="8.8 High" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Account%20Takeover-B91C1C?style=flat-square" alt="Account Takeover" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
+  <strong><a href="https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/2171542593031840100"><code>CVE-2026-86553</code></a></strong> — ZTE SmartLife account backend<br/>
+  Password reset accepted a new password without reset-code verification, enabling account takeover on a validated proof account.
+</p>
+<p>
+  <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/6.2%20Medium-1F2937?style=flat-square" alt="6.2 Medium" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Hardcoded%20Key-7C3AED?style=flat-square" alt="Hardcoded Key" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
+  <strong><a href="https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/874505866159007054"><code>CVE-2026-86555</code></a></strong> — ZTE SmartLife Android client<br/>
+  Hardcoded SmartLife application key exposed application-auth context used to reach account-backend flows.
+</p>
+<p>
+  <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/4.3%20Medium-1F2937?style=flat-square" alt="4.3 Medium" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Account%20Enumeration-0E7490?style=flat-square" alt="Account Enumeration" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
+  <strong><a href="https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/2171542593031840113"><code>CVE-2026-86554</code></a></strong> — ZTE SmartLife account backend<br/>
+  Email enumeration and account ID disclosure through SmartLife account lookup behavior.
+</p>
+<p>
+  <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/5.4%20Medium-1F2937?style=flat-square" alt="5.4 Medium" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Verification%20Bypass-F97316?style=flat-square" alt="Verification Bypass" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
+  <strong><a href="https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/460174866982102946"><code>CVE-2026-86552</code></a></strong> — ZTE SmartLife registration flow<br/>
+  Email ownership verification bypass during SmartLife account registration.
+</p>
 <p>
   <img src="https://img.shields.io/badge/Zyxel-0F766E?style=flat-square" alt="Zyxel" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/39%20models-1F2937?style=flat-square" alt="39 models" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Improper%20Authentication-C2410C?style=flat-square" alt="Improper Authentication" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
   <strong><a href="https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-command-injection-and-improper-authentication-vulnerabilities-in-certain-aps-fwa7-and-security-routers-08-04-2026"><code>CVE-2026-8508</code></a></strong> — Zyxel AP / FWA7 / Security Router fleet<br/>
@@ -141,6 +163,7 @@
 
 | Project | Why it matters |
 | --- | --- |
+| [zte-smartlife-app-pwned](https://github.com/minanagehsalalma/zte-smartlife-app-pwned) | ZTE SmartLife account-backend research leading to four CVEs across password reset, app-auth, enumeration, and signup verification flaws. |
 | [Youtube-Downloader-Bookmarklet](https://github.com/minanagehsalalma/Youtube-Downloader-Bookmarklet) | Highest-traction public repo by stars; a JavaScript bookmarklet with clear real-world usage. |
 | [huawei-dg8045-hg630-hg633-Config-file-decryption-and-password-decode](https://github.com/minanagehsalalma/huawei-dg8045-hg630-hg633-Config-file-decryption-and-password-decode) | Direct evidence of hands-on firmware and config-recovery work in the router/security niche. |
 | [burpsuite-custom-extension](https://github.com/minanagehsalalma/burpsuite-custom-extension) | Shows active extension development for live response modification and testing workflows. |

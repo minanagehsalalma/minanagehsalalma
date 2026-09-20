@@ -1,6 +1,50 @@
 {
   "public": [
     {
+      "id": "CVE-2026-86553",
+      "vendor": "ZTE",
+      "product": "ZTE SmartLife account backend",
+      "impact": "Password reset accepted a new password without reset-code verification, enabling account takeover on a validated proof account.",
+      "scope_badge": "8.8 High",
+      "type_badge": "Account Takeover",
+      "status_badge": "Public",
+      "reference_url": "https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/2171542593031840100",
+      "sort_order": 1
+    },
+    {
+      "id": "CVE-2026-86555",
+      "vendor": "ZTE",
+      "product": "ZTE SmartLife Android client",
+      "impact": "Hardcoded SmartLife application key exposed application-auth context used to reach account-backend flows.",
+      "scope_badge": "6.2 Medium",
+      "type_badge": "Hardcoded Key",
+      "status_badge": "Public",
+      "reference_url": "https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/874505866159007054",
+      "sort_order": 2
+    },
+    {
+      "id": "CVE-2026-86554",
+      "vendor": "ZTE",
+      "product": "ZTE SmartLife account backend",
+      "impact": "Email enumeration and account ID disclosure through SmartLife account lookup behavior.",
+      "scope_badge": "4.3 Medium",
+      "type_badge": "Account Enumeration",
+      "status_badge": "Public",
+      "reference_url": "https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/2171542593031840113",
+      "sort_order": 3
+    },
+    {
+      "id": "CVE-2026-86552",
+      "vendor": "ZTE",
+      "product": "ZTE SmartLife registration flow",
+      "impact": "Email ownership verification bypass during SmartLife account registration.",
+      "scope_badge": "5.4 Medium",
+      "type_badge": "Verification Bypass",
+      "status_badge": "Public",
+      "reference_url": "https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/460174866982102946",
+      "sort_order": 4
+    },
+    {
       "id": "CVE-2026-8508",
       "vendor": "Zyxel",
       "product": "Zyxel AP / FWA7 / Security Router fleet",
@@ -9,7 +53,7 @@
       "type_badge": "Improper Authentication",
       "status_badge": "Public",
       "reference_url": "https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-command-injection-and-improper-authentication-vulnerabilities-in-certain-aps-fwa7-and-security-routers-08-04-2026",
-      "sort_order": 1
+      "sort_order": 5
     },
     {
       "id": "CVE-2026-6837",
@@ -20,7 +64,7 @@
       "type_badge": "Command Injection",
       "status_badge": "Public",
       "reference_url": "https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-command-injection-and-improper-authentication-vulnerabilities-in-certain-aps-fwa7-and-security-routers-08-04-2026",
-      "sort_order": 2
+      "sort_order": 6
     },
     {
       "id": "CVE-2026-34474",
@@ -31,7 +75,7 @@
       "type_badge": "Credential Disclosure",
       "status_badge": "Public",
       "reference_url": "https://minanagehsalalma.github.io/cve-2026-34474-zte-h298a-h108n-sensitive-data-exposure",
-      "sort_order": 3
+      "sort_order": 7
     },
     {
       "id": "CVE-2026-34473",
@@ -42,7 +86,7 @@
       "type_badge": "Denial of Service",
       "status_badge": "Public",
       "reference_url": "https://minanagehsalalma.github.io/cve-2026-34473-unauthenticated-dos-zte-routers",
-      "sort_order": 4
+      "sort_order": 8
     },
     {
       "id": "CVE-2026-34472",
@@ -53,7 +97,7 @@
       "type_badge": "Credential Disclosure",
       "status_badge": "Public",
       "reference_url": "https://minanagehsalalma.github.io/cve-2026-34472-auth-bypass-zte-h188a-router",
-      "sort_order": 5
+      "sort_order": 9
     },
     {
       "id": "CVE-2021-35036",
@@ -64,7 +108,7 @@
       "type_badge": "Super-Admin Password Leak",
       "status_badge": "Public",
       "reference_url": "https://minanagehsalalma.github.io/zyxel-cve-2021-35036-super-admin-password-leak/",
-      "sort_order": 6
+      "sort_order": 10
     },
     {
       "id": "CVE-2021-21735",
@@ -75,7 +119,7 @@
       "type_badge": "Auth Bypass",
       "status_badge": "Public",
       "reference_url": "https://minanagehsalalma.github.io/cve-2021-21735-zte-zxhn-h168n-admin-compromise/",
-      "sort_order": 7
+      "sort_order": 11
     }
   ],
   "assigned": []

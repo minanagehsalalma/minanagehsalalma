@@ -102,6 +102,18 @@ function getTypeMeta(type) {
   if (normalized === "improper authentication") {
     return { label: "Improper Authentication", color: "C2410C" };
   }
+  if (normalized === "account takeover") {
+    return { label: "Account Takeover", color: "B91C1C" };
+  }
+  if (normalized === "hardcoded key") {
+    return { label: "Hardcoded Key", color: "7C3AED" };
+  }
+  if (normalized === "account enumeration") {
+    return { label: "Account Enumeration", color: "0E7490" };
+  }
+  if (normalized === "verification bypass") {
+    return { label: "Verification Bypass", color: "F97316" };
+  }
   if (normalized === "high impact") {
     return { label: "High Impact", color: "B91C1C" };
   }
