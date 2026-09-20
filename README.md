@@ -40,7 +40,7 @@
 <!--SIGNAL_START-->
 ## Operational Snapshot
 
-> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-09-20 19:37 UTC
+> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-09-20 19:57 UTC
 
 <table>
   <tr>
@@ -97,22 +97,22 @@
 
 <p>
   <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/8.8%20High-1F2937?style=flat-square" alt="8.8 High" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Account%20Takeover-B91C1C?style=flat-square" alt="Account Takeover" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
-  <strong><a href="https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/2171542593031840100"><code>CVE-2026-86553</code></a></strong> — ZTE SmartLife account backend<br/>
+  <strong><a href="https://minanagehsalalma.github.io/zte-smartlife-app-pwned/#account-takeover"><code>CVE-2026-86553</code></a></strong> — ZTE SmartLife account backend<br/>
   Password reset accepted a new password without reset-code verification, enabling account takeover on a validated proof account.
 </p>
 <p>
   <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/6.2%20Medium-1F2937?style=flat-square" alt="6.2 Medium" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Hardcoded%20Key-7C3AED?style=flat-square" alt="Hardcoded Key" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
-  <strong><a href="https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/874505866159007054"><code>CVE-2026-86555</code></a></strong> — ZTE SmartLife Android client<br/>
+  <strong><a href="https://minanagehsalalma.github.io/zte-smartlife-app-pwned/#trigger-requests"><code>CVE-2026-86555</code></a></strong> — ZTE SmartLife Android client<br/>
   Hardcoded SmartLife application key exposed application-auth context used to reach account-backend flows.
 </p>
 <p>
   <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/4.3%20Medium-1F2937?style=flat-square" alt="4.3 Medium" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Account%20Enumeration-0E7490?style=flat-square" alt="Account Enumeration" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
-  <strong><a href="https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/2171542593031840113"><code>CVE-2026-86554</code></a></strong> — ZTE SmartLife account backend<br/>
+  <strong><a href="https://minanagehsalalma.github.io/zte-smartlife-app-pwned/#trigger-requests"><code>CVE-2026-86554</code></a></strong> — ZTE SmartLife account backend<br/>
   Email enumeration and account ID disclosure through SmartLife account lookup behavior.
 </p>
 <p>
   <img src="https://img.shields.io/badge/ZTE-15803D?style=flat-square" alt="ZTE" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/5.4%20Medium-1F2937?style=flat-square" alt="5.4 Medium" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/Verification%20Bypass-F97316?style=flat-square" alt="Verification Bypass" height="20" align="absmiddle" />&nbsp;<img src="https://img.shields.io/badge/-Public-2ea043?style=flat-square" alt="Public" height="20" align="absmiddle" /><br/>
-  <strong><a href="https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/460174866982102946"><code>CVE-2026-86552</code></a></strong> — ZTE SmartLife registration flow<br/>
+  <strong><a href="https://minanagehsalalma.github.io/zte-smartlife-app-pwned/#trigger-requests"><code>CVE-2026-86552</code></a></strong> — ZTE SmartLife registration flow<br/>
   Email ownership verification bypass during SmartLife account registration.
 </p>
 <p>

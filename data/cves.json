@@ -8,7 +8,7 @@
       "scope_badge": "8.8 High",
       "type_badge": "Account Takeover",
       "status_badge": "Public",
-      "reference_url": "https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/2171542593031840100",
+      "reference_url": "https://minanagehsalalma.github.io/zte-smartlife-app-pwned/#account-takeover",
       "sort_order": 1
     },
     {
@@ -19,7 +19,7 @@
       "scope_badge": "6.2 Medium",
       "type_badge": "Hardcoded Key",
       "status_badge": "Public",
-      "reference_url": "https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/874505866159007054",
+      "reference_url": "https://minanagehsalalma.github.io/zte-smartlife-app-pwned/#trigger-requests",
       "sort_order": 2
     },
     {
@@ -30,7 +30,7 @@
       "scope_badge": "4.3 Medium",
       "type_badge": "Account Enumeration",
       "status_badge": "Public",
-      "reference_url": "https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/2171542593031840113",
+      "reference_url": "https://minanagehsalalma.github.io/zte-smartlife-app-pwned/#trigger-requests",
       "sort_order": 3
     },
     {
@@ -41,7 +41,7 @@
       "scope_badge": "5.4 Medium",
       "type_badge": "Verification Bypass",
       "status_badge": "Public",
-      "reference_url": "https://support.zte.com.cn/zte-iccp-isupport-webui/bulletin/detail/460174866982102946",
+      "reference_url": "https://minanagehsalalma.github.io/zte-smartlife-app-pwned/#trigger-requests",
       "sort_order": 4
     },
     {
