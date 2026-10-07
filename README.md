@@ -40,7 +40,7 @@
 <!--SIGNAL_START-->
 ## Operational Snapshot
 
-> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-10-06 13:15 UTC
+> Auto-refreshed daily via GitHub Actions. Last refresh: 2026-10-07 13:18 UTC
 
 <table>
   <tr>
